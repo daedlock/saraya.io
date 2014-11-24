@@ -34,7 +34,7 @@ div.cover {
     z-index: -1;
 }
 .cover.blur{
-        background: url(../img/header-blur.png);
+        /*background: url(../img/header-blur.png);*/
         background-size: cover;
         z-index: -2;
     }
