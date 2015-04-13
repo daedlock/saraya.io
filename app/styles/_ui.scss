@@ -1,0 +1,22 @@
+.button {
+  /* GET TO KNOW ME: */
+  font-family: ProximaNova-Bold;
+  font-size: 21.27px;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 2.03px;
+  line-height: 25px;
+  padding: 30px 54px;
+  /* Rectangle 2: */
+  border: 3px solid #FFFFFF;
+  border-radius: 4.8px;
+  display: inline-block;
+  @include transition(background .2s ease-in);
+
+  &:hover {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    background: rgba(255,255,255,.1);
+  }
+
+
+}

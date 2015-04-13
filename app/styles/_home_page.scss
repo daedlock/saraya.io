@@ -1,6 +1,115 @@
 .home-wrapper {
 
+  .headline {
+    /* Hossam Saraya: */
+    font-family: MyriadPro-Semibold;
+    font-size: 48px;
+    color: #FFFFFF;
+    line-height: 58px;
+
+  }
+
+  .sub {
+    /* A UI/UX Designer, Fr: */
+    font-family: Raleway-Regular;
+    font-size: 24px;
+    color: rgba(255,255,255,0.70);
+    line-height: 33px;
+  }
+
+
   .header {
+    color: #FFF;
+    padding-bottom: 74px;
+    .cta {
+      margin-top: 80px;
+      margin-bottom: 76px;
+    }
+    .scroll-to-see {
+      display: inline-block;
+      margin: 0 auto;
+
+      .text {
+        /* scroll down to explo: */
+        font-family: ProximaNova-Regular;
+        font-size: 14px;
+        color: rgba(255,255,255,0.50);
+        line-height: 17px;
+        width:140px;
+        margin:0 auto;
+      }
+
+      img {
+        margin-top: 17px;
+        width: 30px;
+      }
+    }
+    .navigation {
+      margin-bottom: 30px;
+      padding: 33px;
+
+      .logo {
+        /* saraya.me: */
+        font-family: ProximaNova-Semibold;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        line-height: 43px;
+      }
+
+      ul {
+        float:right;
+        margin-right: 80px;
+        list-style: none;
+        position: relative;
+        top: -34px;
+
+        a {
+          padding-bottom: 10px;
+          @include transition(border .2s ease-out);
+        }
+
+        a:hover{
+          text-decoration: none;
+          border-bottom: 4px solid #FFFFFF;
+
+        }
+
+        li {
+          display: inline-block;
+          list-style: none;
+          /* portfolio: */
+          font-family: ProximaNova-Regular;
+          font-size: 24px;
+          color: #FFFFFF;
+          line-height: 29px;
+          margin-left: 47px;
+        }
+      }
+    }
+
+    .headline {
+      font-size: 48px;
+    }
+    .sub {
+      width:60%;
+      margin: 0 auto;
+      margin-top: 9px;
+
+      /* A UI/UX Designer, Fr: */
+      font-family: Raleway-Regular;
+      font-size: 24px;
+      color: rgba(255,255,255,0.70);
+      line-height: 33px;
+    }
+
+    .image {
+      margin-bottom: 70px;
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
    }
 
   .body {
