@@ -26,6 +26,11 @@
   animation: #{$str};
 }
 
+@mixin transform($args...) {
+  -ms-transform: $args; /* IE 9 */
+  -webkit-transform: $args; /* Chrome, Safari, Opera */
+  transform: $args;
+}
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
