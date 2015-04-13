@@ -17,6 +17,11 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .run(function () {
+    //  jQuery
+
+
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -31,3 +36,4 @@ angular
         redirectTo: '/'
       });
   });
+

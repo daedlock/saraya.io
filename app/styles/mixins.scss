@@ -1,0 +1,39 @@
+//Animation
+
+@mixin keyframes($anim) {
+  @-webkit-keyframes $anim {
+    @content;
+  }
+  @-moz-keyframes $anim {
+    @content;
+  }
+  @-ms-keyframes $anim {
+    @content;
+  }
+  @-o-keyframes $anim {
+    @content;
+  }
+  @keyframes $anim {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+
+
