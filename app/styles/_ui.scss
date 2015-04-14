@@ -47,16 +47,28 @@
   }
 
 
-  &.scale {
+  &.closed.scale {
     -webkit-transform: scale(.9,.9);
   }
 
-  &.rotate {
+  &.closed.rotate {
     -webkit-transform: rotateX(-30deg);
   }
 
-  &.skew {
+  &.closed.skew {
     -webkit-transform: skew(20deg, 0deg);
+  }
+
+  &.scale {
+    -webkit-transform: scale(1,1);
+  }
+
+  &.rotate {
+    -webkit-transform: rotateX(0deg);
+
+  }
+  &.skew {
+    -webkit-transform: skew(0deg, 0deg);
   }
 
 }
