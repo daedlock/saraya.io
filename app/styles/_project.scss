@@ -1,6 +1,8 @@
 .project-wrapper {
   color:#FFFFFF;
-
+  * {
+    visibility: hidden;
+  }
   &.jobfusion {
     /* Rectangle 7: */
     background: rgba(27,48,65,0.95);

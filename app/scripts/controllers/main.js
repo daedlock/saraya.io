@@ -34,12 +34,15 @@ angular.module('hsApp')
       url: "http://jobfusion.co",
       modalState: "closed",
       animateContent: function(){
+
+        setTimeout(function(){
           $('.jobfusion h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass("fadeInUp");
+            $(this).siblings("p").addClass("fadeInUp animated");
             //$(this).addClass("animated fadeOutDown");
 
           });
           $(".jobfusion h1").addClass("animated fadeInUp")
+        },300);
 
 
 

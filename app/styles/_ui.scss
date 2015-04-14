@@ -20,6 +20,10 @@
 
 }
 
+.animated {
+  visibility: visible !important;;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -35,7 +39,6 @@
   transition: all .3s ease-out;
   z-index: -1;
 
-
   &.closed {
     opacity: 0;
     z-index: -1;
@@ -46,9 +49,8 @@
 
   }
 
-
   &.closed.scale {
-    -webkit-transform: scale(.9,.9);
+    -webkit-transform: scale(.9, .9);
   }
 
   &.closed.rotate {
@@ -60,7 +62,7 @@
   }
 
   &.scale {
-    -webkit-transform: scale(1,1);
+    -webkit-transform: scale(1, 1);
   }
 
   &.rotate {
@@ -69,6 +71,12 @@
   }
   &.skew {
     -webkit-transform: skew(0deg, 0deg);
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 900px;
+    }
   }
 
 }
