@@ -1,5 +1,10 @@
 .home-wrapper {
 
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
   .headline {
     /* Hossam Saraya: */
     font-family: MyriadPro-Semibold;
@@ -12,9 +17,10 @@
   .sub {
     /* A UI/UX Designer, Fr: */
     font-family: Raleway-Light;
-    font-size: 24px;
+    font-size: 23px;
     color: rgba(255,255,255,0.70);
     line-height: 33px;
+    letter-spacing: -0.7px;
   }
 
 
@@ -55,11 +61,12 @@
         color: #FFFFFF;
         letter-spacing: 1px;
         line-height: 43px;
+        margin-left: 50px;
       }
 
       ul {
         float:right;
-        margin-right: 80px;
+        margin-right: 40px;
         list-style: none;
         position: relative;
         top: -34px;
@@ -97,7 +104,7 @@
       margin-top: 9px;
 
       /* A UI/UX Designer, Fr: */
-      font-size: 24px;
+      font-size: 23px;
       color: rgba(255,255,255,0.70);
       line-height: 33px;
     }
@@ -111,7 +118,50 @@
     }
    }
 
+  .portfolio {
+    img {
+      width:100%;
+    }
+
+    .row {
+      margin-bottom: 30px;
+    }
+  }
   .body {
+    overflow: visible;
+    padding:80px 0 100px 0;
+    position: relative;
+
+    .bg {
+      @include transform(rotate(10deg));
+      background: #FFFFFF;
+      position: absolute;
+      top:0px;
+      left:-200px;
+      right:-200px;
+      bottom:-400px;
+
+    }
+
+
+    .title {
+      /* MOST RECENT WORK: */
+      font-family: ProximaNova-Bold;
+      font-size: 24px;
+      color: rgba(0,0,0,0.80);
+      letter-spacing: 2.5px;
+      line-height: 36px;
+      /* Line: */
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+      border-bottom: 1px solid rgba(9,9,9,0.14);
+
+      .fa {
+        font-size: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+    }
   }
 
   .footer {
@@ -128,7 +178,7 @@
       margin-top: 9px;
 
       /* A UI/UX Designer, Fr: */
-      font-size: 24px;
+      font-size: 23px;
       color: rgba(255,255,255,0.70);
       line-height: 33px;
     }
