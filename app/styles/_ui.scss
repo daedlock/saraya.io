@@ -2,7 +2,7 @@
   /* GET TO KNOW ME: */
   font-family: ProximaNova-Bold;
   font-size: 21.27px;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   letter-spacing: 2.03px;
   line-height: 25px;
   padding: 30px 54px;
@@ -13,22 +13,51 @@
   @include transition(background .2s ease-in);
 
   &:hover {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
   }
 
-
-
 }
-
 
 .overlay {
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  background: rgba(255,255,255,.7);
   z-index: 5000;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  z-index: -1;
+
+
+  &.closed {
+    opacity: 0;
+    z-index: -1;
+  }
+  &.opened {
+    opacity: 1;
+    z-index: 1000;
+
+  }
+
+
+  &.scale {
+    -webkit-transform: scale(.9,.9);
+  }
+
+  &.rotate {
+    -webkit-transform: rotateX(-30deg);
+  }
+
+  &.skew {
+    -webkit-transform: skew(20deg, 0deg);
+  }
+
 }
+

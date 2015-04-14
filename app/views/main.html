@@ -7,8 +7,8 @@
         </a>
       </div>
       <ul class="links">
-        <li><a href="#">portfolio</a></li>
-        <li><a href="">about</a></li>
+        <li><a href="" ng-click="scrollToEl('.body')">portfolio</a></li>
+        <li><a href="" ng-click="scrollToEl('.footer')">about</a></li>
         <li><a href="">blog</a></li>
       </ul>
     </div>
@@ -23,10 +23,10 @@
         Security Reasearcher based in Cairo
       </h4>
       <div class="center cta">
-        <a class="button" href="#">GET TO KNOW ME</a>
+        <a class="button" href="" ng-click="scrollToEl('.body')">GET TO KNOW ME</a>
       </div>
       <div class="center">
-        <a href="#" class="scroll-to-see center">
+        <a href="" class="scroll-to-see center"  ng-click="scrollToEl('.body')">
           <div class="text">
             scroll down to explore
             my work
@@ -51,35 +51,35 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href="" ng-click="jobfusion.toggle()"><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://placehold.it/400x300" alt=""/>
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href=""><img src="http://placehold.it/400x300" alt=""/></a>
         </div>
       </div>
     </div>
@@ -129,4 +129,5 @@
   </div>
 </div>
 
-  <!--<ng-include src="'views/sharp.html'"></ng-include>-->
+  <ng-include src="'views/jobfusion.html'"></ng-include>
+  <ng-include src="'views/sharp.html'"></ng-include>

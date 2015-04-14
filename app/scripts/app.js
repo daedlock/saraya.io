@@ -32,9 +32,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/jobfusion', {
+        templateUrl: 'views/jobfusion.html',
+        controller: 'ProjectController'
       })
       .otherwise({
         redirectTo: '/'
