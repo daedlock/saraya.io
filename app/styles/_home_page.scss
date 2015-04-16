@@ -1,3 +1,6 @@
+ng-include .opened + .home-wrapper {
+  -webkit-filter: blur(15px);
+}
 .home-wrapper {
 
   .avatar {
