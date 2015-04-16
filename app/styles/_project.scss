@@ -1,11 +1,33 @@
 .project-wrapper {
   color:#FFFFFF;
-  * {
+  padding-top: 160px;
+  @include transform(translateZ(0));
+  .title {
+    /* Sharp Insurance Syst: */
+    font-family: MyriadPro-Light;
+    font-size: 46px;
+    color: #FFFFFF;
+    line-height: 56px;
+
+    &.small {
+      font-size: 36px;
+    }
+  }
+
+  .desc {
+    /* fillerati text: */
+    font-family: Raleway-Light;
+    font-size: 22px;
+    color: rgba(255,255,255,0.60);
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  & > * {
     visibility: hidden;
   }
   &.jobfusion {
     /* Rectangle 7: */
-    background: rgba(27,48,65,0.95);
+    background: rgba(27,48,65,0.97);
   }
 
 
