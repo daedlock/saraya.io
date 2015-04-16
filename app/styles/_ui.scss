@@ -38,6 +38,8 @@
 }
 
 .overlay {
+  overflow-y: scroll;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -51,6 +53,7 @@
   -o-transition: all .3s;
   transition: all .3s;
   z-index: -1;
+
 
   &.closed {
     opacity: 0;

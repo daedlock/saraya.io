@@ -22,8 +22,25 @@
     line-height: 35px;
     margin-top: 15px;
   }
+
+  .preview {
+    text-align: right;
+    position: relative;
+    margin-right: -1%;
+    margin-top: 88px;
+
+    img {
+      width:50%;
+    }
+
+    .photo  {
+     position: relative;
+      top:-7px;
+    }
+
+  }
   & > * {
-    visibility: hidden;
+//    visibility: hidden;
   }
   &.jobfusion {
     /* Rectangle 7: */
