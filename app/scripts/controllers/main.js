@@ -36,12 +36,14 @@ angular.module('hsApp')
       animateContent: function(){
 
         setTimeout(function(){
-          $('.jobfusion h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).siblings("p").addClass("fadeInUp animated");
-            //$(this).addClass("animated fadeOutDown");
-
+          //$('.jobfusion h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          //  $(this).siblings("p").addClass("fadeInUp animated");
+          //  //$(this).addClass("animated fadeOutDown");
+          //
+          //});
+          $(".jobfusion h1").animateCSS("fadeInUp", function () {
+            $(this).animateCSS("fadeInLeft");
           });
-          $(".jobfusion h1").addClass("animated fadeInUp")
         },300);
 
 

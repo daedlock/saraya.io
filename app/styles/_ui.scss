@@ -53,8 +53,20 @@
   -o-transition: all .3s;
   transition: all .3s;
   z-index: -1;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  .cta {
+    margin-top: 80px;
+  }
 
 
+  .button {
+    font-family: ProximaNova-Semibold;
+    font-size: 17.27px;
+    letter-spacing: 2.03px;
+    padding: 19px 24px;
+  }
   &.closed {
     opacity: 0;
     z-index: -1;
@@ -78,7 +90,7 @@
   }
 
   &.closed.scale {
-    -webkit-transform: scale(0.5,0.5);
+    -webkit-transform: scale(0.9,0.9);
   }
 
   &.opened.rotate {

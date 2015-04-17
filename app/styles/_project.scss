@@ -1,36 +1,92 @@
 .project-wrapper {
   color:#FFFFFF;
-  padding-top: 160px;
   @include transform(translateZ(0));
   .title {
     /* Sharp Insurance Syst: */
     font-family: MyriadPro-Light;
-    font-size: 46px;
+    font-size: 40px;
     color: #FFFFFF;
-    line-height: 56px;
 
     &.small {
-      font-size: 36px;
+      font-size: 30px;
+      margin-top: 80px;
     }
   }
 
   .desc {
     /* fillerati text: */
     font-family: Raleway-Light;
-    font-size: 22px;
+    font-size: 18px;
     color: rgba(255,255,255,0.60);
-    line-height: 35px;
-    margin-top: 15px;
+    line-height: 46px;
+    margin-top: 10px;
+
   }
 
+  .tech-stack,.tech-stack-small {
+    float: right;
+    min-width: 300px;
+    width: 20%;
+    margin-top: 110px;
+
+    &.tech-stack-small {
+      float: none;
+      width: 100%;
+
+
+    }
+    .title {
+      /* Technology Stack: */
+      font-family: MyriadPro-Light;
+      font-size: 30px;
+      color: rgba(255,255,255,0.80);
+      line-height: 37px;
+
+      img {
+        width:30px;
+      }
+    }
+
+    .line {
+      /* Line: */
+      border-bottom: 1px solid rgba(255,255,255,0.20);
+      margin-top: 10px;
+    }
+
+    .techs {
+      margin-left: 45px;
+    }
+    .tech-headline {
+      margin-top: 43px;
+      /* Backend: */
+      font-family: "MyriadPro-Light";
+      font-size: 28px;
+      color: rgba(255,255,255,0.80);
+      line-height: 37px;
+    }
+
+    .frontend {
+      margin-top: 80px;
+    }
+    .tech-name {
+      /* Ruby on Rails: */
+      font-family: Raleway-Light;
+      font-size: 20px;
+      color: rgba(255,255,255,0.80);
+      letter-spacing: 1.79px;
+      line-height: 29px;
+      margin-top: 12px;
+    }
+  }
   .preview {
     text-align: right;
     position: relative;
     margin-right: -1%;
     margin-top: 88px;
-
+    width: 60%;
+    float: right;
     img {
-      width:50%;
+      width:100%;
     }
 
     .photo  {
@@ -38,6 +94,20 @@
       top:-7px;
     }
 
+  }
+
+  .preview-small {
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+    .photo {
+      position: relative;
+      top:-7px;
+    }
   }
   & > * {
 //    visibility: hidden;

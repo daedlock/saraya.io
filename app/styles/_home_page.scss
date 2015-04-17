@@ -1,5 +1,7 @@
 ng-include .opened + .home-wrapper {
   -webkit-filter: blur(15px);
+  overflow: hidden;
+  overflow-y: hidden;
 }
 .home-wrapper {
 

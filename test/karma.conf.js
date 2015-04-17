@@ -31,6 +31,7 @@ module.exports = function(config) {
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/jquery-backstretch/jquery.backstretch.js',
       'bower_components/fakeloader/fakeLoader.js',
+      'bower_components/animateCSS/dist/jquery.animatecss.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

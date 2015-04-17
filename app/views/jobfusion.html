@@ -1,7 +1,7 @@
 <div class="overlay project-wrapper jobfusion scale {{jobfusion.modalState}}">
   <div class="container ptl">
     <div class="close-modal text-right">
-      <a class="" ng-click="toggle()">
+      <a class="" ng-click="jobfusion.toggle()">
         Close
         <i class="fa fa-crosshairs text-right"></i>
       </a>
@@ -11,7 +11,7 @@
     <p class="project-desc desc">Unlock your social network to find tech jobs that you're directly connected to. With
       the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again.</p>
 
-    <h1 class="mtl title small role">My Role</h1>
+    <h1 class=" title small role">My Role</h1>
 
     <p class="role-desc desc">
       In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards
@@ -19,12 +19,82 @@
       place; for at one and the same .
     </p>
   </div>
-  <div class="preview">
-    <div class="bar">
-      <img src="/images/browser_bar.png" alt=""/>
+  <div class="tech hidden-sm hidden-xs">
+
+
+    <div class="preview">
+      <div class="bar">
+        <img src="/images/browser_bar.png" alt=""/>
+      </div>
+      <div class="photo">
+        <img src="/images/jobfusion/preview.png" alt=""/>
+      </div>
     </div>
-    <div class="photo">
-      <img src="/images/jobfusion/preview.png" alt=""/>
+
+    <div class="tech-stack ">
+      <div class="title">
+        <img src="/images/stack.png" alt=""/>
+        Technology Stack
+      </div>
+      <div class="line"></div>
+      <div class="techs backend">
+        <div class="tech-headline">Backend</div>
+        <div class="line"></div>
+        <div class="backend">
+          <div class="tech-name">Rails</div>
+          <div class="tech-name">AWS</div>
+        </div>
+        <div class="frontend">
+          <div class="tech-headline">Frontend</div>
+          <div class="line"></div>
+          <div class="tech-name">AngularJS</div>
+          <div class="tech-name">Modernizr</div>
+          <div class="tech-name">Bootstrap</div>
+          <div class="tech-name">SASS</div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="tech-compact visible-sm visible-xs container">
+    <div class="preview-small">
+      <div class="bar">
+        <img src="/images/browser_bar.png" alt=""/>
+      </div>
+      <div class="photo">
+        <img src="/images/jobfusion/preview.png" alt=""/>
+      </div>
+    </div>
+    <div class="tech-stack-small ">
+      <div class="title">
+        <img src="/images/stack.png" alt=""/>
+        Technology Stack
+      </div>
+      <div class="line"></div>
+      <div class="techs backend">
+        <div class="tech-headline">Backend</div>
+        <div class="line"></div>
+        <div class="backend">
+          <div class="tech-name">Rails</div>
+          <div class="tech-name">AWS</div>
+        </div>
+
+      <div class="frontend ">
+        <div class="tech-headline">Frontend</div>
+        <div class="line"></div>
+        <div class="tech-name">AngularJS</div>
+        <div class="tech-name">Modernizr</div>
+        <div class="tech-name">Bootstrap</div>
+        <div class="tech-name">SASS</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="center  cta">
+  <a class="button" href="" ng-click="scrollToEl('.body')">
+    <i class="fa fa-eye"></i>
+    SCREENSHOTS
+  </a>
+
+</div>
 </div>
