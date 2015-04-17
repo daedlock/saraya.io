@@ -22,6 +22,9 @@ angular.module('hsApp')
         $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
         $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
 
+       $(document).ready(function () {
+         $("a.fluid-zoom").fluidbox();
+       });
 
       $(".jobfusion-wrapper").css({minHeight: $(document).height()})
       console.log($(".jobfusion-wrapper").css({minHeight: $(document).height()}));
@@ -41,9 +44,20 @@ angular.module('hsApp')
           //  //$(this).addClass("animated fadeOutDown");
           //
           //});
-          $(".jobfusion h1").animateCSS("fadeInUp", function () {
-            $(this).animateCSS("fadeInLeft");
+
+          var jobfusionModal = $(".jobfusion.project-wrapper");
+          jobfusionModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
+
           });
+          jobfusionModal.find(".role-desc,.role").animateCSS("fadeInUp", function () {
+
+          });
+          jobfusionModal.find(".tech-stack").animateCSS("fadeInLeftBig");
+          jobfusionModal.find(".preview").animateCSS("fadeInRightBig", function () {
+            jobfusionModal.find(".close-modal").animateCSS("rotateIn")
+
+          });
+          //jobfusionModal.find(".close-modal").animateCSS("slideInRight");
         },300);
 
 

@@ -13,6 +13,12 @@
     }
   }
 
+  .line {
+    /* Line: */
+    border-bottom: 1px solid rgba(255,255,255,0.20);
+    margin-top: 10px;
+  }
+
   .desc {
     /* fillerati text: */
     font-family: Raleway-Light;
@@ -47,11 +53,7 @@
       }
     }
 
-    .line {
-      /* Line: */
-      border-bottom: 1px solid rgba(255,255,255,0.20);
-      margin-top: 10px;
-    }
+
 
     .techs {
       margin-left: 45px;
@@ -65,19 +67,23 @@
       line-height: 37px;
     }
 
+
+
+
     .frontend {
       margin-top: 80px;
     }
     .tech-name {
       /* Ruby on Rails: */
       font-family: Raleway-Light;
-      font-size: 20px;
+      font-size: 16px;
       color: rgba(255,255,255,0.80);
       letter-spacing: 1.79px;
       line-height: 29px;
       margin-top: 12px;
     }
   }
+
   .preview {
     text-align: right;
     position: relative;
@@ -109,6 +115,29 @@
       top:-7px;
     }
   }
+
+  .screenshots {
+    margin-top: 100px;
+
+    .screenshots-headline {
+      /* Screenshots: */
+      font-family: MyriadPro-Light;
+      font-size: 30px;
+      color: rgba(255,255,255,0.80);
+      letter-spacing: 1.25px;
+    }
+
+    .line {
+      margin-bottom: 45px;
+    }
+    img {
+      width: 100% !important;
+    }
+
+
+  }
+
+
   & > * {
 //    visibility: hidden;
   }
