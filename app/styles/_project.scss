@@ -117,14 +117,28 @@
   }
 
   .screenshots {
-    margin-top: 100px;
+    margin-top: 150px;
 
+    .row {
+      margin-top: 20px;
+    }
+    .fluidbox-overlay {
+      bottom:-1000%;
+      background: rgba(0,0,0,.75);
+    }
     .screenshots-headline {
       /* Screenshots: */
       font-family: MyriadPro-Light;
       font-size: 30px;
       color: rgba(255,255,255,0.80);
       letter-spacing: 1.25px;
+
+      img {
+        width: 30px !important;
+        position: relative;
+        top:-3px;
+        margin-right: 10px;
+      }
     }
 
     .line {
@@ -139,11 +153,11 @@
 
 
   & > * {
-//    visibility: hidden;
+    visibility: hidden;
   }
   &.jobfusion {
     /* Rectangle 7: */
-    background: rgba(27,48,65,0.97);
+    background: rgba(27,48,65,0.92);
   }
 
 

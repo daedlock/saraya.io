@@ -11,7 +11,7 @@ angular.module('hsApp')
   .controller('MainCtrl', function ($scope) {
 
 
-
+    $scope.modalOpened = false;
     $scope.load = function(){
         //$("#fakeLoader").fakeLoader({
         //  timeToHide: '3000',
@@ -23,8 +23,11 @@ angular.module('hsApp')
         $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
 
        $(document).ready(function () {
-         $("a.fluid-zoom").fluidbox();
        });
+
+      $scope.$on('$includeContentLoaded', function(event) {
+        $("a.fluid-zoom").fluidbox();
+      });
 
       $(".jobfusion-wrapper").css({minHeight: $(document).height()})
       console.log($(".jobfusion-wrapper").css({minHeight: $(document).height()}));
@@ -58,7 +61,7 @@ angular.module('hsApp')
 
           });
           //jobfusionModal.find(".close-modal").animateCSS("slideInRight");
-        },300);
+        },500);
 
 
 
@@ -66,6 +69,7 @@ angular.module('hsApp')
 
       toggle: function(){
         this.modalState = (this.modalState=="closed")? "opened":"closed";
+        $scope.modalOpened = !$scope.modalOpened;
         this.animateContent();
       }
 
