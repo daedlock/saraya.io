@@ -110,7 +110,7 @@ angular.module('hsApp')
         title: "Jobfusion",
         url: "http://jobfusion.co",
         description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
-        role: "",
+        role: "I was hired as the Lead UI/UX Designer and front-end developer. My responsibilites included creating UX wireframes and designing responsive UI components then implementing them using bootstrap.",
         cssSelector: ".jobfusion",
         cssClasses: "jobfusion",
         modalState: "closed",
@@ -139,8 +139,8 @@ angular.module('hsApp')
       {
         title: "Sharpone",
         url: "",
-        description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
-        role: "",
+        description: "Sharpone Web Application is an internal product used by Sharp One Insurance Co. in Canada. The application is a Rich SPA relying completely on AngularJS.",
+        role: "I was hired to design and develop the UI/UX for Sharp. The project was very interesting because it gave me the chance to dive deeper into AngularJS",
 
         cssSelector: ".sharp",
         cssClasses: "sharp",

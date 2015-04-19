@@ -81,6 +81,22 @@
     @include transform(translateX(-50%));
 
 
+    -webkit-animation-name:flash;
+    -webkit-animation-duration:2s !important;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state:running;
+    /* Standard syntax */
+    animation-name:flash;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-play-state:running;
+
   }
 
 
@@ -107,12 +123,13 @@ animation-play-state:running;
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst
 {
-  0%   {background: #222; left:0px; top:0px;}
-  25%  {background: #e74c3c; left:0px; top:0px;}
-  50%  {background: #16a085; left:0px; top:0px;}
-  75%  {background: #0d3349; left:0px; top:0px;}
-  100% {background: #e38d13; left:0px; top:0px;}
+  0%   {background: #311D39; left:0px; top:0px;}
+  25%  {background: #67434F; left:0px; top:0px;}
+  50%  {background: #8CBF99; left:0px; top:0px;}
+  75%  {background: #F06D61; left:0px; top:0px;}
+  100% {background: #A51A41; left:0px; top:0px;}
 }
+
 
 /* Standard syntax */
 @keyframes myfirst
@@ -122,4 +139,14 @@ animation-play-state:running;
   50%  {background: #16a085; left:0px; top:0px;}
   75%  {background: #0d3349; left:0px; top:0px;}
   100% {background: #e38d13; left:0px; top:0px;}
+}
+
+
+@-webkit-keyframes flash
+{
+  0%   {opacity: 1}
+  25%  {opacity: .55}
+  50%  {opacity: .20;}
+  75%  {opacity: .55}
+  100% {opacity: 1}
 }
