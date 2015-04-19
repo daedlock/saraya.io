@@ -35,22 +35,27 @@ function initialize($scope) {
 
 
 
+
 };
+function clearAnimationClasses(project){
+  var projectModal = $(project.cssSelector+".project-wrapper");
+  projectModal.find("[style]").attr("style","");
+}
 function animateContent(project) {
   setTimeout(function () {
-    var jobfusionModal = $(project.cssSelector+".project-wrapper");
-    jobfusionModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
+    var projectModal = $(project.cssSelector+".project-wrapper");
+    projectModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
 
     });
-    jobfusionModal.find(".role-desc,.role").animateCSS("fadeInUp", function () {
+    projectModal.find(".role-desc,.role").animateCSS("fadeInUp", function () {
 
     });
-    jobfusionModal.find(".tech-stack").animateCSS("fadeInLeftBig");
-    jobfusionModal.find(".preview").animateCSS("fadeInRightBig", function () {
-      jobfusionModal.find(".close-modal").animateCSS("rotateIn")
-      jobfusionModal.find(".screenshots").animateCSS("fadeInUpBig")
+    projectModal.find(".tech-stack,.tech-compact").animateCSS("fadeInLeftBig");
+    projectModal.find(".preview").animateCSS("fadeInRightBig", function () {
+      projectModal.find(".close-modal").animateCSS("rotateIn")
+      projectModal.find(".screenshots").animateCSS("fadeInUp")
     });
-    jobfusionModal.find(".close-modal").animateCSS("slideInRight");
+    projectModal.find(".close-modal").animateCSS("slideInRight");
   }, 500);
 }
 function toggle($scope,project) {
@@ -58,14 +63,23 @@ function toggle($scope,project) {
   if (project.modalOpened) {
     project.modalState = "closed"
     project.modalOpened = false;
-    $(project.cssSelector+".project-wrapper").find(".animated").removeClass("animated fadeInLeftBig fadeInRightBig  fadeInUp rotateIn");
+    clearAnimationClasses(project);
     $scope.currentProject = {};
   }
   else {
     project.modalState = "opened"
     project.modalOpened = true;
     $scope.currentProject = project;
+
+    //Broadcast modal opened event
+    $scope.$broadcast("modalOpened");
+    setTimeout(function () {
+      $(" a.fluid-zoom").fluidbox();
+
+    },10);
+    //reactive fluidbox
     animateContent(project);
+
   }
 }
 
@@ -82,7 +96,6 @@ angular.module('hsApp')
         url: "http://jobfusion.co",
         description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
         role: "",
-
         cssSelector: ".jobfusion",
         cssClasses: "jobfusion",
         modalState: "closed",
@@ -110,7 +123,7 @@ angular.module('hsApp')
 
       {
         title: "Sharpone",
-        url: "http://jobfusion.co",
+        url: "",
         description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
         role: "",
 
@@ -129,11 +142,12 @@ angular.module('hsApp')
             "Bootstrap",
             "SASS",
             "AngularJS",
-            "Modernizr"
+            "Modernizr",
+            "Grunt"
           ],
           backend: [
-            "Rails",
-            "AWS"
+            "NodeJS",
+            "SailsJS"
           ]
         }
       }

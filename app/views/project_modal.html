@@ -51,7 +51,7 @@
       </div>
     </div>
   </div>
-  <div class="tech-compact visible-sm visible-xs container animated">
+  <div class="tech-compact visible-sm visible-xs container">
     <div class="preview-small">
       <div class="bar">
         <img src="/images/browser_bar.png" alt=""/>
@@ -84,16 +84,16 @@
   <div class="clearfix"></div>
 
   <!-- Project screenshots-->
-  <div class="screenshots container animated">
+  <div class="screenshots container">
     <div class="screenshots-headline">
       <img src="/images/camera.png" alt=""/>
       Screenshots
     </div>
     <div class="line"></div>
     <div class="row">
-      <div class="col-md-4 wow fadeIn" ng-repeat="screenie in currentProject.screenshots">
-        <a href="{{screenie}}" class="fluid-zoom">
-          <img src="{{screenie}}" alt="x"/>
+      <div class="col-md-4" ng-repeat="screenie in currentProject.screenshots track by $index">
+        <a ng-href="{{screenie}}" class="fluid-zoom">
+          <img ng-src="{{screenie}}"  alt="x"/>
         </a>
       </div>
 
