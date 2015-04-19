@@ -35,7 +35,7 @@ function initialize($scope) {
     $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
     $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
     $(".preload").animateCSS("fadeOutDownBig", function () {
-      $(this).hide();
+      $(this).remove();
     });
 
   });

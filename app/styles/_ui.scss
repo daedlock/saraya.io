@@ -37,7 +37,7 @@
 }
 .animated {
   visibility: visible !important;;
-  -vendor-animation-duration: 1s;
+  -vendor-animation-duration: 1s !important;
 }
 
 .overlay {
@@ -121,4 +121,6 @@
   }
 
 }
+
+
 
