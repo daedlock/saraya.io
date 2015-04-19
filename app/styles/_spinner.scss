@@ -1,7 +1,6 @@
 .spinner {
-  margin: 100px auto;
-  width: 32px;
-  height: 32px;
+  width: 52px;
+  height: 52px;
   position: relative;
 }
 
@@ -56,7 +55,33 @@
   right: 0;
   background: #222;
   text-align: center;
-  display: flex;
-  align-items: center;
+
+  font-family: "ProximaNova-Semibold";
+  letter-spacing: 2px;
+
+
+  .spinner {
+    position: absolute;
+    top:50%;
+    left:50%;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+
+  .bold {
+
+    transition: all 4s !important;
+    transition-duration: 2s !important;
+    -webkit-transition-duration: 2s !important;
+    position: absolute;
+    letter-spacing: 3px;
+    color:#FFF;
+    font-size: 12px;
+    top: calc(50% + 70px);
+    left:50%;
+    @include transform(translateX(-50%));
+
+
+  }
+
 
 }
