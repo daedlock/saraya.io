@@ -24,8 +24,23 @@ function initialize($scope) {
     $(window).scrollTop(0);
   });
 
-  $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
-  $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
+  $(document).ready(function () {
+    $(".preload").remove();
+    $(".body").addClass("offset-page-vertical");
+  });
+
+  $(window).load(function () {
+    $(".body").removeClass("offset-page-vertical");
+    $(".header").removeClass("hidden");
+    $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
+    $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
+    $(".preload").animateCSS("fadeOutDownBig", function () {
+      $(this).hide();
+    });
+
+  });
+
+
 
 
   //Fires on loading divs from ng-include (modals in this case)
