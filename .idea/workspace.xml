@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a100174f-600b-4743-b053-f76862a731a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/jobfusion.html" afterPath="$PROJECT_DIR$/app/views/jobfusion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sharp.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/jobfusion.html" afterPath="$PROJECT_DIR$/app/views/project_modal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_ui.scss" afterPath="$PROJECT_DIR$/app/styles/_ui.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,35 +34,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <file leaf-file-name="project_modal.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="960">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#initialize#0" expanded="false" />
-                <element signature="e#1172#1900#0" expanded="false" />
-                <element signature="e#1927#2318#0" expanded="false" />
-                <element signature="e#2346#2380#0" expanded="false" />
-                <element signature="e#2400#2408#0" expanded="false" />
-                <element signature="e#2448#2540#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="2160">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobfusion.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/jobfusion.html">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="803">
-              <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2380">
+              <caret line="0" column="70" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_ui.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37959182" vertical-offset="354" max-vertical-offset="2520">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/project.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -606,13 +619,15 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3018648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30140188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2501762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -620,10 +635,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -653,17 +666,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/jobfusion.html">
+    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1656" max-vertical-offset="2360">
           <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,12 +687,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1620">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#1172#1900#0" expanded="false" />
-            <element signature="e#1927#2318#0" expanded="false" />
-            <element signature="e#2346#2380#0" expanded="false" />
-            <element signature="e#2400#2408#0" expanded="false" />
-            <element signature="e#2448#2540#0" expanded="false" />
+            <element signature="e#4049#4141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,27 +708,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1010" max-vertical-offset="2780">
           <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sharp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="220">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobfusion.html">
+    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,12 +733,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#1172#1900#0" expanded="false" />
-            <element signature="e#1927#2318#0" expanded="false" />
-            <element signature="e#2346#2380#0" expanded="false" />
-            <element signature="e#2400#2408#0" expanded="false" />
-            <element signature="e#2448#2540#0" expanded="false" />
+            <element signature="e#4049#4141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,27 +754,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="947" max-vertical-offset="2780">
           <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sharp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="220">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobfusion.html">
+    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="240">
           <caret line="3" column="239" selection-start-line="3" selection-start-column="239" selection-end-line="3" selection-end-column="239" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -813,12 +786,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="700">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#1172#1900#0" expanded="false" />
-            <element signature="e#1927#2318#0" expanded="false" />
-            <element signature="e#2346#2380#0" expanded="false" />
-            <element signature="e#2400#2408#0" expanded="false" />
-            <element signature="e#2448#2540#0" expanded="false" />
+            <element signature="e#4049#4141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,6 +795,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2112" max-vertical-offset="2760">
           <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,13 +803,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sharp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="220">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -864,12 +827,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="700">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#1172#1900#0" expanded="false" />
-            <element signature="e#1927#2318#0" expanded="false" />
-            <element signature="e#2346#2380#0" expanded="false" />
-            <element signature="e#2400#2408#0" expanded="false" />
-            <element signature="e#2448#2540#0" expanded="false" />
+            <element signature="e#4049#4141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -878,6 +836,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -892,6 +851,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3119584" vertical-offset="0" max-vertical-offset="1800">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -899,13 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.797227" vertical-offset="0" max-vertical-offset="580">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72270364" vertical-offset="703" max-vertical-offset="1280">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -927,6 +880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5840555" vertical-offset="163" max-vertical-offset="1000">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,20 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24615385" vertical-offset="0" max-vertical-offset="300">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089153044" vertical-offset="0" max-vertical-offset="673">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
@@ -972,24 +912,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74294204" vertical-offset="220" max-vertical-offset="980">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sharp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18382353" vertical-offset="0" max-vertical-offset="544">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321617" vertical-offset="2331" max-vertical-offset="10260">
           <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,17 +949,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62271065" vertical-offset="0" max-vertical-offset="2380">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.94736844" vertical-offset="140" max-vertical-offset="900">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40183488" vertical-offset="221" max-vertical-offset="1520">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21052632" vertical-offset="840" max-vertical-offset="3260">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="e#4049#4141#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_project.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23076923" vertical-offset="1374" max-vertical-offset="1920">
-          <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
+        <state vertical-scroll-proportion="3.0091743" vertical-offset="0" max-vertical-offset="1920">
+          <caret line="163" column="9" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="9" />
           <folding>
             <element signature="e#577#1459#0" expanded="false" />
             <element signature="e#1472#1700#0" expanded="false" />
@@ -1041,62 +995,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62271065" vertical-offset="220" max-vertical-offset="2520">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state vertical-scroll-proportion="2.0550458" vertical-offset="0" max-vertical-offset="1280">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29357797" vertical-offset="0" max-vertical-offset="545">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47619048" vertical-offset="0" max-vertical-offset="560">
+        <state vertical-scroll-proportion="0.47706422" vertical-offset="0" max-vertical-offset="560">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_home_page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7728938" vertical-offset="798" max-vertical-offset="5220">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.07339449" vertical-offset="0" max-vertical-offset="5220">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07326008" vertical-offset="280" max-vertical-offset="1520">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="960">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#initialize#0" expanded="false" />
-            <element signature="e#1172#1900#0" expanded="false" />
-            <element signature="e#1927#2318#0" expanded="false" />
-            <element signature="e#2346#2380#0" expanded="false" />
-            <element signature="e#2400#2408#0" expanded="false" />
-            <element signature="e#2448#2540#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
+          <caret line="0" column="70" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobfusion.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="803">
-          <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.37959182" vertical-offset="354" max-vertical-offset="2520">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

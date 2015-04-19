@@ -32,10 +32,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/jobfusion', {
-        templateUrl: 'views/jobfusion.html',
-        controller: 'ProjectController'
-      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,4 +1,4 @@
-<div class="home-wrapper" ng-class="{'blur':modalOpened}">
+<div class="home-wrapper" ng-class="{'blur':currentProject.modalOpened}">
   <div class="header">
     <div class="navigation wow slideInDown" data-wow-delay="2.5s">
       <div class="logo">
@@ -55,9 +55,9 @@
 
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="n in [1,2,3,4,5,6] track by $index"
-             data-wow-delay="{{(n/10) + 's'}}">
-          <a href="" ng-click="jobfusion.toggle()">Click<img src="http://placehold.it/200x200" alt=""/></a>
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in projects">
+             <!--data-wow-delay="{{(n/10) + 's'}}">-->
+          <a href="" ng-click="toggle(project)"><h1>project</h1><img src="http://placehold.it/200x200" alt=""/></a>
         </div>
 
       </div>
@@ -109,5 +109,5 @@
   </div>
 
 </div>
-<ng-include src="'views/jobfusion.html'"></ng-include>
+<ng-include src="'views/project_modal.html'"></ng-include>
 <ng-include src="'views/sharp.html'"></ng-include>

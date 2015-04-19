@@ -1,0 +1,102 @@
+<div class="overlay project-wrapper    {{currentProject.cssClasses}}  {{currentProject.modalState}}" ng-style="{'blur':currentProject.modalOpened}">
+
+  <!-- Project details and role-->
+  <div class="container ptl">
+    <div class="close-modal text-right">
+      <a class="" ng-click="toggle(currentProject)">
+        <img src="/images/cross.png" alt=""/>
+      </a>
+    </div>
+    <h1 class="title project-title">{{currentProject.title}}</h1>
+
+    <p class="project-desc desc">{{currentProject.description}}</p>
+
+    <h1 class=" title small role">My Role</h1>
+
+    <p class="role-desc desc">
+     {{currentProject.role}}
+    </p>
+  </div>
+
+  <!-- Techstack and preview-->
+  <div class="tech hidden-sm hidden-xs">
+
+
+    <div class="preview">
+      <div class="bar">
+        <img src="/images/browser_bar.png" alt=""/>
+      </div>
+      <div class="photo">
+        <img src="{{currentProject.previewImageUrl}}" alt=""/>
+      </div>
+    </div>
+
+    <div class="tech-stack ">
+      <div class="title">
+        <img src="/images/stack.png" alt=""/>
+        Technology Stack
+      </div>
+      <div class="line"></div>
+      <div class="techs backend">
+        <div class="tech-headline">Backend</div>
+        <div class="line"></div>
+        <div class="backend">
+          <div class="tech-name" ng-repeat="tech in currentProject.techStack.backend">{{tech}}</div>
+        </div>
+        <div class="frontend">
+          <div class="tech-headline">Frontend</div>
+          <div class="line"></div>
+          <div class="tech-name" ng-repeat="tech in currentProject.techStack.frontend">{{tech}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tech-compact visible-sm visible-xs container animated">
+    <div class="preview-small">
+      <div class="bar">
+        <img src="/images/browser_bar.png" alt=""/>
+      </div>
+      <div class="photo">
+        <img src="{{currentProject.previewImageUrl}}" alt=""/>
+      </div>
+    </div>
+    <div class="tech-stack-small ">
+      <div class="title">
+        <img src="/images/stack.png" alt=""/>
+        Technology Stack
+      </div>
+      <div class="line"></div>
+      <div class="techs backend">
+        <div class="tech-headline">Backend</div>
+        <div class="line"></div>
+        <div class="backend">
+          <div class="tech-name" ng-repeat="tech in currentProject.techStack.backend">{{tech}}</div>
+        </div>
+
+        <div class="frontend ">
+          <div class="tech-headline">Frontend</div>
+          <div class="line"></div>
+          <div class="tech-name" ng-repeat="tech in currentProject.techStack.frontend">{{tech}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <!-- Project screenshots-->
+  <div class="screenshots container animated">
+    <div class="screenshots-headline">
+      <img src="/images/camera.png" alt=""/>
+      Screenshots
+    </div>
+    <div class="line"></div>
+    <div class="row">
+      <div class="col-md-4 wow fadeIn" ng-repeat="screenie in currentProject.screenshots">
+        <a href="{{screenie}}" class="fluid-zoom">
+          <img src="{{screenie}}" alt="x"/>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
