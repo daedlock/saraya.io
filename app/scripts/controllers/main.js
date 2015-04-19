@@ -70,7 +70,6 @@ function animateContent(project) {
       projectModal.find(".close-modal").animateCSS("rotateIn")
       projectModal.find(".screenshots").animateCSS("fadeInUp")
     });
-    projectModal.find(".close-modal").animateCSS("slideInRight");
   }, 500);
 }
 function toggle($scope,project) {
