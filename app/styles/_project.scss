@@ -6,10 +6,11 @@
     font-family: MyriadPro-Light;
     font-size: 40px;
     color: #FFFFFF;
-
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
     &.small {
       font-size: 30px;
       margin-top: 80px;
+
     }
   }
 
@@ -47,7 +48,7 @@
       font-size: 30px;
       color: rgba(255,255,255,0.80);
       line-height: 37px;
-
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
       img {
         width:30px;
       }
@@ -65,6 +66,7 @@
       font-size: 28px;
       color: rgba(255,255,255,0.80);
       line-height: 37px;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
     }
 
 
@@ -140,11 +142,12 @@
       font-size: 30px;
       color: rgba(255,255,255,0.80);
       letter-spacing: 1.25px;
-
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
       img {
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
         width: 30px !important;
         position: relative;
-        top:-3px;
+        top:-12px;
         margin-right: 10px;
       }
     }
@@ -165,13 +168,13 @@
   }
   &.jobfusion {
     /* Rectangle 7: */
-    background: rgba(27,48,65,0.92);
+    background: rgba(27,48,65,0.97);
   }
 
 
   &.sharp {
     /* Rectangle 13: */
-    background: rgba(147,52,13,0.95);
+    background: rgba(168,72,32,0.97);
   }
 
 }

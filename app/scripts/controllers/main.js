@@ -109,7 +109,7 @@ angular.module('hsApp')
         title: "Jobfusion",
         url: "http://jobfusion.co",
         description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
-        role: "I was hired as the Lead UI/UX Designer and front-end developer. My responsibilites included creating UX wireframes and designing responsive UI components then implementing them using bootstrap.",
+        role: "I was hired as the Lead UI/UX Designer and front-end developer. My responsibilites included creating UX wireframes and designing/developing responsive UI components.",
         cssSelector: ".jobfusion",
         cssClasses: "jobfusion",
         modalState: "closed",
