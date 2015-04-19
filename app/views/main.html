@@ -1,6 +1,6 @@
 <div class="home-wrapper" ng-class="{'blur':modalOpened}">
   <div class="header">
-    <div class="navigation">
+    <div class="navigation wow slideInDown" data-wow-delay="2.5s">
       <div class="logo">
         <a href="">
           saraya.me
@@ -15,23 +15,26 @@
 
 
     <div class="container">
-      <div class="image center">
+      <div class="image center wow flipInX" data-wow-delay="3s">
         <img class="avatar" src="/images/avatar.png" alt=""/>
       </div>
-      <h1 class="center headline" >Hossam Saraya</h1>
-      <h4 class="center sub">A UI/UX Designer, Front-end, iOS Developer and a
+      <h1 class="center headline wow fadeInUp" data-wow-delay="3.5s">Hossam Saraya</h1>
+      <h4 class="center sub wow fadeIn" data-wow-delay="3.7s">A UI/UX Designer, Front-end, iOS Developer and a
         Security Reasearcher based in Cairo
       </h4>
-      <div class="center cta">
+
+      <div class="center cta wow bounceIn" data-wow-delay="3.8s">
         <a class="button" href="" ng-click="scrollToEl('.body')">GET TO KNOW ME</a>
       </div>
       <div class="center">
-        <a href="" class="scroll-to-see center"  ng-click="scrollToEl('.body')">
-          <div class="text">
+        <a href="" class="scroll-to-see center "  ng-click="scrollToEl('.body')">
+
+          <div class="text wow fadeInUp" data-wow-delay="4.5s">
+            <img src="/images/mouse.png" alt=""/>
+
             scroll down to explore
             my work
           </div>
-          <img src="/images/mouse.png" alt=""/>
         </a>
       </div>
     </div>
@@ -49,85 +52,62 @@
           </h1>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="" ng-click="jobfusion.toggle()"><img src="http://placehold.it/200x200" alt=""/></a>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="n in [1,2,3,4,5,6] track by $index"
+             data-wow-delay="{{(n/10) + 's'}}">
+          <a href="" ng-click="jobfusion.toggle()">Click<img src="http://placehold.it/200x200" alt=""/></a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholder.png" alt=""/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
+
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href=""><img src="/images/placeholde" alt=""/></a>
-        </div>
-      </div>
+
     </div>
 
+
+
   </div>
-
-
-  <div class="footer" >
+  <div class="footer">
     <div class="container">
-      <h1 class="center headline" >Hossam Saraya</h1>
-      <h4 class="center sub">A UI/UX Designer, Front-end, iOS Developer and a
+      <h1 class="center headline wow fadeInUp">Hossam Saraya</h1>
+      <h4 class="center sub wow fadeIn" data-wow-delay="0.1s">A UI/UX Designer, Front-end, iOS Developer and a
         Security Reasearcher based in Cairo
       </h4>
 
-      <div class="center cta">
+      <div class="center cta wow bounceIn" data-wow-delay=".2s">
 
         <a class="button" href="#">
           <img src="/images/pencil.png" alt=""/>
           CHECK MY BLOG</a>
       </div>
 
-      <div class="line"></div>
+      <div class="line wow fadeIn" data-wow-delay=".6s"></div>
       <div class="center">
         <ul class="social">
 
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".6s"><a href="#">
             <i class="fa fa-facebook"></i>
           </a></li>
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".7s"><a href="#">
             <i class="fa fa-twitter"></i>
           </a></li>
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".8s"><a href="#">
             <i class="fa fa-github"></i>
           </a></li>
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".9s"><a href="#">
             <i class="fa fa-stack-overflow"></i>
           </a></li>
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay="1s"><a href="#">
             <i class="fa fa-linkedin"></i>
           </a></li>
-          <li><a href="#">
+          <li class="wow fadeInDown" data-wow-delay="1.1s"><a href="#">
             <i class="fa fa-envelope"></i>
           </a></li>
         </ul>
       </div>
     </div>
   </div>
-</div>
 
-  <ng-include src="'views/jobfusion.html'"></ng-include>
-  <ng-include src="'views/sharp.html'"></ng-include>
+</div>
+<ng-include src="'views/jobfusion.html'"></ng-include>
+<ng-include src="'views/sharp.html'"></ng-include>

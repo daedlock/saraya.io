@@ -36,6 +36,7 @@ module.exports = function(config) {
       'bower_components/eventEmitter/EventEmitter.js',
       'bower_components/eventie/eventie.js',
       'bower_components/imagesloaded/imagesloaded.js',
+      'bower_components/wow/dist/wow.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

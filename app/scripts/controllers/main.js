@@ -7,9 +7,10 @@
  * # MainCtrl
  * Controller of the hsApp
  */
+
+
 angular.module('hsApp')
   .controller('MainCtrl', function ($scope) {
-
 
     $scope.modalOpened = false;
     $scope.load = function(){
@@ -18,14 +19,21 @@ angular.module('hsApp')
         //  spinner: 'spinner7',
         //  bgColor: "#222"
         //});
+        new WOW().init();
 
-        $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
+      $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+      });
+
+      $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
         $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
 
        $(document).ready(function () {
        });
 
       $scope.$on('$includeContentLoaded', function(event) {
+
+
         $("a.fluid-zoom").fluidbox();
       });
 
@@ -58,9 +66,10 @@ angular.module('hsApp')
           jobfusionModal.find(".tech-stack").animateCSS("fadeInLeftBig");
           jobfusionModal.find(".preview").animateCSS("fadeInRightBig", function () {
             jobfusionModal.find(".close-modal").animateCSS("rotateIn")
+            jobfusionModal.find(".screenshots").animateCSS("fadeInUpBig")
 
           });
-          //jobfusionModal.find(".close-modal").animateCSS("slideInRight");
+          jobfusionModal.find(".close-modal").animateCSS("slideInRight");
         },500);
 
 
@@ -68,9 +77,18 @@ angular.module('hsApp')
       },
 
       toggle: function(){
-        this.modalState = (this.modalState=="closed")? "opened":"closed";
-        $scope.modalOpened = !$scope.modalOpened;
-        this.animateContent();
+        if($scope.modalOpened){
+          this.modalState = "closed"
+          $scope.modalOpened = false;
+          $(".jobfusion.project-wrapper").find(".animated").removeClass("animated fadeInLeftBig fadeInRightBig  fadeInUp rotateIn");
+        }
+        else {
+          this.modalState = "opened"
+          $scope.modalOpened = true;
+          this.animateContent();
+
+        }
+
       }
 
     };
