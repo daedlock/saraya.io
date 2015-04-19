@@ -115,11 +115,18 @@ angular.module('hsApp')
         modalState: "closed",
         modalOpened: false,
         screenshots: [
-          "/images/jobfusion/preview.png",
-          "/images/jobfusion/preview.png",
-          "/images/jobfusion/preview.png"
+          "/images/jobfusion/1.jpg",
+          "/images/jobfusion/2.jpg",
+          "/images/jobfusion/3.jpg",
+          "/images/jobfusion/4.jpg",
+          "/images/jobfusion/5.jpg",
+          "/images/jobfusion/6.jpg",
+          "/images/jobfusion/7.jpg",
+          "/images/jobfusion/8.jpg",
+          "/images/jobfusion/9.jpg"
+
         ],
-        previewImageUrl: "/images/jobfusion/preview.png",
+        previewImageUrl: "/images/jobfusion/preview.jpg",
         techStack: {
           frontend: [
             "Bootstrap",

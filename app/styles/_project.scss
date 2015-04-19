@@ -85,6 +85,8 @@
   }
 
   .preview {
+    /* jobs: */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.42);
     text-align: right;
     position: relative;
     margin-right: -1%;
@@ -97,12 +99,13 @@
 
     .photo  {
      position: relative;
-      top:-7px;
     }
 
   }
 
   .preview-small {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.42);
+
     text-align: center;
     margin-top: 60px;
     width: 100%;
@@ -112,7 +115,6 @@
     }
     .photo {
       position: relative;
-      top:-7px;
     }
   }
 
@@ -121,6 +123,7 @@
 
     img {
       margin-top: 20px;
+      border-radius: 4px;
     }
     .fluidbox-overlay {
       bottom:-1000%;
