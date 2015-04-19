@@ -126,10 +126,9 @@
       bottom:-1000%;
       background: rgba(0,0,0,.75);
     }
-//    .fluidbox-ghost {
-//      transition-delay: 0s;
-//      transition: transform .125s;
-//    }
+    .fluidbox-ghost {
+      transition-duration: 0.25s;
+    }
     .screenshots-headline {
       /* Screenshots: */
       font-family: MyriadPro-Light;
