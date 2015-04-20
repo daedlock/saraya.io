@@ -176,6 +176,36 @@ angular.module('hsApp')
             "SailsJS"
           ]
         }
+      },
+
+
+      {
+        title: "Ovio",
+        url: "",
+        description: "An elite  European restaurant/café",
+        role: "I worked on the frontend implementation. The most fun thing was creating the masonry layout.",
+
+        cssSelector: ".ovio",
+        cssClasses: "ovio",
+        modalState: "closed",
+        modalOpened: false,
+        screenshots: [
+          "/images/ovio/1.jpg",
+          "/images/ovio/2.jpg",
+          "/images/ovio/3.jpg",
+          "/images/ovio/4.jpg"
+        ],
+        previewImageUrl: "/images/ovio/preview.jpg",
+        techStack: {
+          frontend: [
+            "Bootstrap",
+            "SASS",
+          ],
+          backend: [
+            "Rails",
+            "AWS"
+          ]
+        }
       }
 
 
