@@ -78,6 +78,7 @@ function animateContent(project) {
   setTimeout(function () {
     var projectModal = $(project.cssSelector+".project-wrapper");
     projectModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
+      projectModal.find(".close-modal").animateCSS("rotateIn");
 
     });
     projectModal.find(".preview-mobile").animateCSS("bounceIn", function () {
@@ -89,7 +90,6 @@ function animateContent(project) {
     });
     projectModal.find(".tech-stack,.tech-compact").animateCSS("fadeInLeftBig");
     projectModal.find(".preview").animateCSS("fadeInRightBig", function () {
-      projectModal.find(".close-modal").animateCSS("rotateIn")
     });
     projectModal.find(".screenshots").animateCSS("fadeInUp");
   }, 500);
