@@ -56,7 +56,6 @@
   -o-transition: all .3s;
   transition: all .3s;
   z-index: -1;
-  padding-bottom: 80px;
   padding-top: 80px;
 
 
@@ -120,6 +119,9 @@
     }
   }
 
+  .no-relative {
+    position: static;
+  }
 }
 
 

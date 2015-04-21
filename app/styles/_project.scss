@@ -149,13 +149,18 @@
   }
   .screenshots {
     margin-top: 150px;
+    padding-bottom: 80px;
 
     img {
       margin-top: 20px;
       border-radius: 4px;
     }
     .fluidbox-overlay {
-      bottom:-1000%;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -1000%;
       background: rgba(0,0,0,.75);
       transition-duration: 0.25s;
 
