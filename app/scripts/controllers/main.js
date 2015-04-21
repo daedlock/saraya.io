@@ -10,6 +10,17 @@
 
 
 /*
+ * Chunks the project to adjust the grid
+ */
+function chunk(arr, size) {
+  var newArr = [];
+  for (var i=0; i<arr.length; i+=size) {
+    newArr.push(arr.slice(i, i+size));
+  }
+  return newArr;
+}
+
+/*
  * Contains jquery plugins initialization and dom adjustments
  */
 function initialize($scope) {
@@ -49,6 +60,13 @@ function initialize($scope) {
   });
 
 
+  //To adjust the grid
+  $scope.$watch(function(){
+    return window.innerWidth;
+  }, function(value) {
+    console.log(value);
+  });
+
 
 
 };
@@ -62,18 +80,18 @@ function animateContent(project) {
     projectModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
 
     });
+    projectModal.find(".preview-mobile").animateCSS("bounceIn", function () {
+      projectModal.find(".close-modal").animateCSS("rotateIn")
+    });
+
     projectModal.find(".role-desc,.role").animateCSS("fadeInUp", function () {
-      projectModal.find(".preview-mobile").animateCSS("flipInX", function () {
-        projectModal.find(".close-modal").animateCSS("rotateIn")
-        projectModal.find(".screenshots").animateCSS("fadeInUp")
-      });
 
     });
     projectModal.find(".tech-stack,.tech-compact").animateCSS("fadeInLeftBig");
     projectModal.find(".preview").animateCSS("fadeInRightBig", function () {
       projectModal.find(".close-modal").animateCSS("rotateIn")
-      projectModal.find(".screenshots").animateCSS("fadeInUp")
     });
+    projectModal.find(".screenshots").animateCSS("fadeInUp");
   }, 500);
 }
 function toggle($scope,project) {
@@ -108,7 +126,7 @@ angular.module('hsApp')
   .controller('MainCtrl', function ($scope) {
 
     $scope.currentProject = {};
-    $scope.projects = [
+    var projects = [
       {
         title: "Jobfusion",
         type: "web",
@@ -132,6 +150,7 @@ angular.module('hsApp')
 
         ],
         previewImageUrl: "/images/jobfusion/preview.jpg",
+        mockupImageUrl: "/images/mockups/jobfusion.jpg",
         techStack: {
           frontend: [
             "Bootstrap",
@@ -168,6 +187,8 @@ angular.module('hsApp')
           "/images/sharp/8.jpg",
         ],
         previewImageUrl: "/images/sharp/preview.jpg",
+        mockupImageUrl: "/images/mockups/sharp.jpg",
+
         techStack: {
           frontend: [
             "Bootstrap",
@@ -201,6 +222,8 @@ angular.module('hsApp')
           "/images/ovio/4.jpg"
         ],
         previewImageUrl: "/images/ovio/preview.jpg",
+        mockupImageUrl: "/images/mockups/ovio.jpg",
+
         techStack: {
           frontend: [
             "Bootstrap",
@@ -230,6 +253,8 @@ angular.module('hsApp')
           "/images/nassya/3.jpg",
         ],
         previewImageUrl: "/images/nassya/preview.jpg",
+        mockupImageUrl: "/images/mockups/nassya.jpg",
+
         techStack: {
           frontend: [
             "Bootstrap",
@@ -259,7 +284,8 @@ angular.module('hsApp')
           "/images/80m/3.jpg",
           "/images/80m/4.jpg"
         ],
-        previewImageUrl: "/images/80m/preview.jpg"
+        previewImageUrl: "/images/80m/preview.jpg",
+        mockupImageUrl: "/images/mockups/80m.jpg"
 
       },
 
@@ -282,11 +308,16 @@ angular.module('hsApp')
           "/images/komodo/5.jpg"
 
         ],
-        previewImageUrl: "/images/komodo/preview.jpg"
+        previewImageUrl: "/images/komodo/preview.jpg",
+        mockupImageUrl: "/images/mockups/komodo.jpg"
+
 
       }
     ];
 
+    $scope.projects = chunk(projects,3);
+    $scope.projectsTwoColumn = chunk(projects,2);
+    $scope.projectsOneColumn = chunk(projects,1);
 
     $scope.toggle = function (project) {
       toggle($scope,project);

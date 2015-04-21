@@ -53,15 +53,31 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row hidden-sm hidden-xs" ng-repeat="row in projects">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in projects">
+        <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
              <!--data-wow-delay="{{(n/10) + 's'}}">-->
-          <a href="" ng-click="toggle(project)"><img src="http://placehold.it/200x200" alt=""/></a>
+          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
         </div>
 
       </div>
 
+      <div class="row hidden-lg hidden-xs hidden-md" ng-repeat="row in projectsTwoColumn">
+
+        <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
+          <!--data-wow-delay="{{(n/10) + 's'}}">-->
+          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
+        </div>
+
+      </div>
+      <div class="row visible-xs" ng-repeat="row in projectsOneColumn">
+
+        <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
+          <!--data-wow-delay="{{(n/10) + 's'}}">-->
+          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
+        </div>
+
+      </div>
     </div>
 
 

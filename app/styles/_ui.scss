@@ -40,6 +40,9 @@
   -vendor-animation-duration: 1s !important;
 }
 
+img.round {
+  border-radius: 6px;
+}
 .overlay {
   overflow-y: scroll;
   overflow-x: hidden;
