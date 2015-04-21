@@ -63,6 +63,10 @@ function animateContent(project) {
 
     });
     projectModal.find(".role-desc,.role").animateCSS("fadeInUp", function () {
+      projectModal.find(".preview-mobile").animateCSS("flipInX", function () {
+        projectModal.find(".close-modal").animateCSS("rotateIn")
+        projectModal.find(".screenshots").animateCSS("fadeInUp")
+      });
 
     });
     projectModal.find(".tech-stack,.tech-compact").animateCSS("fadeInLeftBig");
@@ -107,6 +111,7 @@ angular.module('hsApp')
     $scope.projects = [
       {
         title: "Jobfusion",
+        type: "web",
         url: "http://jobfusion.co",
         description: "Unlock your social network to find tech jobs that you're directly connected to. With the largest tech jobs database in the world, save time looking for a job and never miss an opportunity again",
         role: "I was hired as the Lead UI/UX Designer and front-end developer. My responsibilites included creating UX wireframes and designing/developing responsive UI components.",
@@ -141,9 +146,9 @@ angular.module('hsApp')
         }
       },
 
-
       {
         title: "Sharpone",
+        type: "web",
         url: "",
         description: "Sharpone Web Application is an internal product used by Sharp One Insurance Co. in Canada. The application is a Rich SPA relying completely on AngularJS.",
         role: "I was hired to design and develop the UI/UX for Sharp. The project was very interesting because it gave me the chance to dive deeper into AngularJS",
@@ -178,11 +183,11 @@ angular.module('hsApp')
         }
       },
 
-
       {
         title: "Ovio",
+        type: "web",
         url: "",
-        description: "An elite  European restaurant/café",
+        description: "An elite  European restaurant/café. The project involved creating a full-fledged Web Application and Admin Backend for the restaurant.",
         role: "I worked on the frontend implementation. The most fun thing was creating the masonry layout.",
 
         cssSelector: ".ovio",
@@ -206,10 +211,80 @@ angular.module('hsApp')
             "AWS"
           ]
         }
+      },
+
+      {
+        title: "Nassya",
+        type: "web",
+        url: "",
+        description: "Nassya is an Egyptian social network that connects you with people in your neighborhood.",
+        role: "I worked in a medium sized team mainly as a Frontend and iOS Developer. I worked on the Web application, Mobile website and the iOS Application.",
+
+        cssSelector: ".nassya",
+        cssClasses: "nassya",
+        modalState: "closed",
+        modalOpened: false,
+        screenshots: [
+          "/images/nassya/1.jpg",
+          "/images/nassya/2.jpg",
+          "/images/nassya/3.jpg",
+        ],
+        previewImageUrl: "/images/nassya/preview.jpg",
+        techStack: {
+          frontend: [
+            "Bootstrap",
+            "SASS",
+          ],
+          backend: [
+            "Rails",
+            "AWS"
+          ]
+        }
+      },
+
+      {
+        title: "80M ATM Locator",
+        type: "mobile",
+        url: "",
+        description: "Never run out of cash! You're stuck in cash and need to find your bank's nearest ATM. The 80M app will show you the nearest ATMs and banks wherever you are in Egypt and help you get directions and call the bank directly from the app. We have designed 80M to make it as quick as possible to find what you want. note: The app only works in Egypt.",
+        role: "I am the Co-Founder of the app. I also developed everything from the ground up starting from the RESTful API Backend, the Administration Backend and the iOS App itself. I also designed the UX/UI.",
+
+        cssSelector: "._80m",
+        cssClasses: "_80m",
+        modalState: "closed",
+        modalOpened: false,
+        screenshots: [
+          "/images/80m/1.jpg",
+          "/images/80m/2.jpg",
+          "/images/80m/3.jpg",
+          "/images/80m/4.jpg"
+        ],
+        previewImageUrl: "/images/80m/preview.jpg"
+
+      },
+
+      {
+        title: "Komodo",
+        type: "mobile",
+        url: "",
+        description: "Komodo is a mobile client for Oracle EBS (E-business Suite). The app targets business users and corporates and it works as a mobile interface for HR tasks.",
+        role: "UI/UX Design",
+
+        cssSelector: ".komodo",
+        cssClasses: "komodo",
+        modalState: "closed",
+        modalOpened: false,
+        screenshots: [
+          "/images/komodo/1.jpg",
+          "/images/komodo/2.jpg",
+          "/images/komodo/3.jpg",
+          "/images/komodo/4.jpg",
+          "/images/komodo/5.jpg"
+
+        ],
+        previewImageUrl: "/images/komodo/preview.jpg"
+
       }
-
-
-
     ];
 
 

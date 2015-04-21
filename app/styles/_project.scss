@@ -86,6 +86,7 @@
     }
   }
 
+
   .preview {
     /* jobs: */
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.42);
@@ -120,6 +121,32 @@
     }
   }
 
+  .preview-mobile {
+    margin-top: 116px;
+    text-align: center;
+    .iphone-frame {
+      text-align: center;
+
+      margin: 0 auto;
+      background: url("/images/iphone_frame.png");
+      background-size: contain;
+      /* min-height: 500px; */
+      background-repeat: no-repeat;
+      background-position: center;
+
+      img {
+        width: 50%;
+        z-index: -1;
+        transform: scale(0.76, 0.76);
+      }
+
+      @media (max-width: 480px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .screenshots {
     margin-top: 150px;
 
@@ -182,6 +209,20 @@
     background: rgba(28,34,42,0.97);
   }
 
+  &.nassya {
+    /* Rectangle 13: */
+    background: rgba(69,28,28,0.97);
+    /* Rectangle 13: */
+  }
+
+  &._80m {
+    /* Rectangle 7: */
+    background: rgba(47,127,85,0.97);
+  }
+  &.komodo {
+    /* Rectangle 7: */
+    background: rgba(28,34,42,0.97);
+  }
 }
 
 
