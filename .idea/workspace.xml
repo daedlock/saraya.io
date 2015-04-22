@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a100174f-600b-4743-b053-f76862a731a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/_codrops_hover.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_home_page.scss" afterPath="$PROJECT_DIR$/app/styles/_home_page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_ui.scss" afterPath="$PROJECT_DIR$/app/styles/_ui.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_codrops_hover.scss" afterPath="$PROJECT_DIR$/app/styles/_codrops_hover.scss" />
     </list>
     <ignored path="hs-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_ui.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_ui.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84095067" vertical-offset="1340" max-vertical-offset="2740">
+            <state vertical-scroll-proportion="-18.4" vertical-offset="1340" max-vertical-offset="2740">
               <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
               <folding />
             </state>
@@ -70,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_codrops_hover.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_codrops_hover.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/_codrops_hover.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3921568" vertical-offset="627" max-vertical-offset="2880">
-              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state vertical-scroll-proportion="-4.1823416" vertical-offset="2319" max-vertical-offset="2840">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -891,7 +885,7 @@
         <state vertical-scroll-proportion="0.43706295" vertical-offset="18370" max-vertical-offset="20720">
           <caret line="931" column="30" selection-start-line="931" selection-start-column="30" selection-end-line="931" selection-end-column="30" />
           <folding>
-            <marker date="1429710198000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429710470000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -952,18 +946,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_codrops_hover.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3921568" vertical-offset="627" max-vertical-offset="2880">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state vertical-scroll-proportion="-18.4" vertical-offset="1340" max-vertical-offset="2740">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/_codrops_hover.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84095067" vertical-offset="1340" max-vertical-offset="2740">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+        <state vertical-scroll-proportion="-4.1823416" vertical-offset="2319" max-vertical-offset="2840">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
