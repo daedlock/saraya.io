@@ -36,20 +36,30 @@ function initialize($scope) {
   });
 
   $(document).ready(function () {
-    $(".preload").remove();
+    //For Preloading
     $(".body").addClass("offset-page-vertical");
-  });
 
-  $(window).load(function () {
-    $(".body").removeClass("offset-page-vertical");
-    $(".header").removeClass("hidden");
-    $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
-    $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
-    $(".preload").animateCSS("fadeOutDownBig", function () {
-      $(this).remove();
+    var imgLoad =  imagesLoaded($(".preload-images .preload-before img"));
+
+    imgLoad.on( 'progress', function( instance, image ) {
+      var result = image.isLoaded ? 'loaded' : 'broken';
+      console.log( 'image is ' + result + ' for ' + image.img.src );
+    });
+
+
+    imgLoad.on('always',function () {
+      $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
+      $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
+      $(".header").removeClass("hidden");
+      $(".body").removeClass("offset-page-vertical");
+      $(".preload").animateCSS("fadeOutDownBig", function () {
+        $(this).remove();
+      });
     });
 
   });
+
+
 
 
 
@@ -59,17 +69,9 @@ function initialize($scope) {
     $("a.fluid-zoom").fluidbox();
   });
 
-
-  //To adjust the grid
-  $scope.$watch(function(){
-    return window.innerWidth;
-  }, function(value) {
-    console.log(value);
-  });
-
-
-
 };
+
+
 function clearAnimationClasses(project){
   var projectModal = $(project.cssSelector+".project-wrapper");
   projectModal.find("[style]").attr("style","");
