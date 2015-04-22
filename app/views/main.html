@@ -55,9 +55,18 @@
 
       <div class="row hidden-sm hidden-xs" ng-repeat="row in projects">
 
-        <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
+        <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp round" ng-repeat="project in row">
              <!--data-wow-delay="{{(n/10) + 's'}}">-->
-          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
+            <figure class="effect-chico round">
+              <img ng-src="{{project.mockupImageUrl}}" class="round" alt="img12"/>
+              <figcaption>
+                <div>
+                  <h2> <span>{{project.title}}</span></h2>
+                  <!--<p>Lily likes to play with crayons and pencils</p>-->
+                </div>
+                <a ng-click="toggle(project)">View more</a>
+              </figcaption>
+            </figure>
         </div>
 
       </div>
@@ -66,16 +75,32 @@
 
         <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
           <!--data-wow-delay="{{(n/10) + 's'}}">-->
-          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
-        </div>
+          <figure class="effect-chico round">
+            <img ng-src="{{project.mockupImageUrl}}" class="round" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2> <span>{{project.title}}</span></h2>
+                <!--<p>Lily likes to play with crayons and pencils</p>-->
+              </div>
+              <a ng-click="toggle(project)">View more</a>
+            </figcaption>
+          </figure>        </div>
 
       </div>
       <div class="row visible-xs" ng-repeat="row in projectsOneColumn">
 
         <div class=" col-xs-12 col-sm-6 col-md-4 wow fadeInUp" ng-repeat="project in row">
           <!--data-wow-delay="{{(n/10) + 's'}}">-->
-          <a href="" ng-click="toggle(project)"><img class="round" ng-src="{{project.mockupImageUrl}}"  alt=""/></a>
-        </div>
+          <figure class="effect-chico round">
+            <img ng-src="{{project.mockupImageUrl}}" class="round" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2> <span>{{project.title}}</span></h2>
+                <!--<p>Lily likes to play with crayons and pencils</p>-->
+              </div>
+              <a ng-click="toggle(project)">View more</a>
+            </figcaption>
+          </figure>        </div>
 
       </div>
     </div>

@@ -25,9 +25,9 @@
 .blur {
 
 //
-    -webkit-filter: blur(3px);
-  filter: blur(3px);
- transition: all 0s !important;
+//    -webkit-filter: blur(3px);
+//  filter: blur(3px);
+// transition: all 0s !important;
 
 
 }
@@ -51,7 +51,7 @@ img.round {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 5000;
   opacity: 0;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -88,7 +88,7 @@ img.round {
   }
   &.opened {
     opacity: 1;
-    z-index: 2;
+    z-index: 6000;
 
   }
 

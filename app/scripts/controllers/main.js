@@ -268,7 +268,7 @@ angular.module('hsApp')
       },
 
       {
-        title: "80M ATM Locator",
+        title: "80M",
         type: "mobile",
         url: "",
         description: "Never run out of cash! You're stuck in cash and need to find your bank's nearest ATM. The 80M app will show you the nearest ATMs and banks wherever you are in Egypt and help you get directions and call the bank directly from the app. We have designed 80M to make it as quick as possible to find what you want. note: The app only works in Egypt.",
