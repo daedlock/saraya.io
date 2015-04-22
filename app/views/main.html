@@ -1,18 +1,20 @@
 <div class="home-wrapper" ng-class="{'blur':currentProject.modalOpened}">
   <div class="header hidden">
     <div class="navigation wow slideInDown" >
-      <div class="logo">
-        <a href="">
+      <div class="logo hidden-xs hidden-sm">
+        <a href="http://saraya.me">
           saraya.me
         </a>
       </div>
-      <ul class="links">
+
+      <ul class="links hidden-xs hidden-sm">
         <li><a href="" ng-click="scrollToEl('.body')">portfolio</a></li>
         <li><a href="" ng-click="scrollToEl('.footer')">about</a></li>
-        <li><a href="">blog</a></li>
+        <li><a href="http://blog.saraya.me">blog</a></li>
       </ul>
     </div>
 
+    <div class="visible-sm visible-xs mtl"></div>
 
     <div class="container ">
       <div class="image center wow fadeInDown" data-wow-delay=".5s">
@@ -117,34 +119,59 @@
 
       <div class="center cta wow flipInX" data-wow-delay=".2s">
 
-        <a class="button" href="#">
-          <img src="/images/pencil.png" alt=""/>
+        <a  target="__" class="button" href="http://blog.saraya.me">
+          <img  src="/images/pencil.png" alt=""/>
           CHECK MY BLOG</a>
       </div>
 
       <div class="line wow fadeIn" data-wow-delay=".6s"></div>
       <div class="center">
-        <ul class="social">
+        <ul class="social hidden-xs">
 
-          <li class="wow fadeInDown" data-wow-delay=".6s"><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".6s"><a target="_" href="https://www.facebook.com/hossam.saraya">
             <i class="fa fa-facebook"></i>
           </a></li>
-          <li class="wow fadeInDown" data-wow-delay=".7s"><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".7s"><a target="_" href="https://twitter.com/hossamsaraya">
             <i class="fa fa-twitter"></i>
           </a></li>
-          <li class="wow fadeInDown" data-wow-delay=".8s"><a href="#">
+          <li class="wow fadeInDown" data-wow-delay=".8s"><a target="_" href="https://github.com/daedlock">
             <i class="fa fa-github"></i>
           </a></li>
-          <li class="wow fadeInDown" data-wow-delay=".9s"><a href="#">
+
+          <li class="wow fadeInDown" data-wow-delay=".9s"><a target="_" href="http://stackoverflow.com/users/552301/deadlock">
             <i class="fa fa-stack-overflow"></i>
           </a></li>
-          <li class="wow fadeInDown" data-wow-delay="1s"><a href="#">
+          <li class="wow fadeInDown" data-wow-delay="1s"><a target="_" href="https://www.linkedin.com/in/hossamsaraya">
             <i class="fa fa-linkedin"></i>
           </a></li>
-          <li class="wow fadeInDown" data-wow-delay="1.1s"><a href="#">
+          <li class="wow fadeInDown" data-wow-delay="1.1s"><a target="_" href="mailto:hossam.saraya@gmail.com">
             <i class="fa fa-envelope"></i>
           </a></li>
         </ul>
+        <div class="visible-xs center">
+          <ul class="social-mobile">
+
+            <li class="wow fadeInDown" data-wow-delay=".6s"><a href="#">
+              <i class="fa fa-facebook"></i>
+            </a></li>
+            <li class="wow fadeInDown" data-wow-delay=".7s"><a href="#">
+              <i class="fa fa-twitter"></i>
+            </a></li>
+            <li class="wow fadeInDown" data-wow-delay=".8s"><a href="#">
+              <i class="fa fa-github"></i>
+            </a></li>
+
+            <li class="wow fadeInDown" data-wow-delay=".9s"><a href="#">
+              <i class="fa fa-stack-overflow"></i>
+            </a></li>
+            <li class="wow fadeInDown" data-wow-delay="1s"><a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a></li>
+            <li class="wow fadeInDown" data-wow-delay="1.1s"><a href="#">
+              <i class="fa fa-envelope"></i>
+            </a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

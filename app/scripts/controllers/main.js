@@ -207,7 +207,7 @@ angular.module('hsApp')
       {
         title: "Ovio",
         type: "web",
-        url: "",
+        url: "http://ovio.eu",
         description: "An elite  European restaurant/café. The project involved creating a full-fledged Web Application and Admin Backend for the restaurant.",
         role: "I worked on the frontend implementation. The most fun thing was creating the masonry layout.",
 
@@ -239,7 +239,7 @@ angular.module('hsApp')
       {
         title: "Nassya",
         type: "web",
-        url: "",
+        url: "http://nassya.com",
         description: "Nassya is an Egyptian social network that connects you with people in your neighborhood.",
         role: "I worked in a medium sized team mainly as a Frontend and iOS Developer. I worked on the Web application, Mobile website and the iOS Application.",
 
@@ -270,7 +270,7 @@ angular.module('hsApp')
       {
         title: "80M",
         type: "mobile",
-        url: "",
+        url: "http://80mlocator.com",
         description: "Never run out of cash! You're stuck in cash and need to find your bank's nearest ATM. The 80M app will show you the nearest ATMs and banks wherever you are in Egypt and help you get directions and call the bank directly from the app. We have designed 80M to make it as quick as possible to find what you want. note: The app only works in Egypt.",
         role: "I am the Co-Founder of the app. I also developed everything from the ground up starting from the RESTful API Backend, the Administration Backend and the iOS App itself. I also designed the UX/UI.",
 

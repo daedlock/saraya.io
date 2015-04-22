@@ -7,7 +7,11 @@
         <img src="/images/cross.png" alt=""/>
       </a>
     </div>
-    <h1 class="title project-title">{{currentProject.title}}</h1>
+    <a ng-href="{{currentProject.url}}" target="_">
+      <h1 class="title project-title">{{currentProject.title}}
+        <i class="fa fa-share-square-o"></i>
+      </h1>
+    </a>
 
     <p class="project-desc desc">{{currentProject.description}}</p>
 
