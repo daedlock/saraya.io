@@ -39,7 +39,7 @@ function initialize($scope) {
     //For Preloading
     $(".body").addClass("offset-page-vertical");
 
-    var imgLoad =  imagesLoaded($(".preload-images .preload-before img"));
+    var imgLoad =  imagesLoaded($(".preload-before img"));
 
     imgLoad.on( 'progress', function( instance, image ) {
       var result = image.isLoaded ? 'loaded' : 'broken';

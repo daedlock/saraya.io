@@ -16,7 +16,7 @@
 
     <div class="visible-sm visible-xs mtl"></div>
 
-    <div class="container "> 
+    <div class="container ">
       <div class="image center wow fadeInDown" data-wow-delay=".5s">
         <img class="avatar" src="/images/avatar.jpg" alt=""/>
       </div>
@@ -186,8 +186,15 @@
     <img src="/images/ovio/preview.jpg" alt=""/>
     <img src="/images/iphone_frame.png" alt=""/>
 
+    <div ng-repeat="row in projects">
+      <div ng-repeat="project in row">
+        <img ng-src="{{project.previewImageUrl}}" alt=""/>
+        <img ng-src="{{screenie}}" ng-repeat="screenie in project.screenshots">
+        </div>
+      </div>
+    </div>
     <!--Preload before website-->
-    <div class="preload-before">
+    <div class="preload-before hidden">
       <img src="/images/avatar.jpg" alt=""/>
       <img src="/images/desk_bg.jpg" class="" alt=""/>
       <img src="/images/footer_bg.jpg" class="" alt=""/>
@@ -199,6 +206,8 @@
       <img src="/images/mockups/nassya.jpg" alt=""/>
       <img src="/images/mockups/ovio.jpg" alt=""/>
       <img src="/images/mockups/sharp.jpg" alt=""/>
+      <!--End -->
+
     </div>
 
   </div>
