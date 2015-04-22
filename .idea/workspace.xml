@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a100174f-600b-4743-b053-f76862a731a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_home_page.scss" afterPath="$PROJECT_DIR$/app/styles/_home_page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_project.scss" afterPath="$PROJECT_DIR$/app/styles/_project.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/project_modal.html" afterPath="$PROJECT_DIR$/app/views/project_modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hs-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36563072" vertical-offset="2040" max-vertical-offset="3760">
+            <state vertical-scroll-proportion="-8.0" vertical-offset="2040" max-vertical-offset="3760">
               <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
               <folding>
                 <element signature="n#figure#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -112,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_modal.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="project_modal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.8" vertical-offset="0" max-vertical-offset="2780">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.40219378" vertical-offset="0" max-vertical-offset="2780">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -952,14 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.8" vertical-offset="0" max-vertical-offset="2780">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_ui.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="55.72" vertical-offset="2193" max-vertical-offset="2740">
@@ -981,12 +968,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36563072" vertical-offset="2040" max-vertical-offset="3760">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="2040" max-vertical-offset="3760">
           <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
           <folding>
             <element signature="n#figure#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#figcaption#0;n#figure#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/project_modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40219378" vertical-offset="0" max-vertical-offset="2780">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@
     </div>
     <a ng-href="{{currentProject.url}}" target="_">
       <h1 class="title project-title">{{currentProject.title}}
-        <i class="fa fa-share-square-o"></i>
+        <i ng-if="currentProject.url.length > 0" class="fa fa-share-square-o"></i>
       </h1>
     </a>
 
