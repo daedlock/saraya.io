@@ -7,13 +7,18 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+
 module.exports = function (grunt) {
+
+
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
+
+ var mozjpeg = require('imagemin-mozjpeg');
 
   // Configurable paths for the application
   var appConfig = {
@@ -28,6 +33,27 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+
+    //SSH Deploy
+    environments: {
+
+      options: {
+        local_path: 'dist'
+      },
+
+      production: {
+        options: {
+          current_symlink: 'html',
+          deploy_path: '/var/www',
+          host: 'saraya.me',
+          username: 'root',
+          password: 'hossam11',
+          debug: true,
+          number_of_releases: '3',
+          before_deploy: 'rm -rf /var/www/html'
+        }
+      }
+    },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -305,16 +331,18 @@ module.exports = function (grunt) {
     // },
 
     imagemin: {
+      options: {
+        use: [mozjpeg()]
+      },
       dist: {
         files: [{
-          //expand: true,
-          //cwd: '<%= yeoman.app %>/images',
-          //src: '{,*/}*.{png,jpg,jpeg,gif}',
-          //dest: '<%= yeoman.dist %>/images'
+          expand: true,
+          cwd: '<%= yeoman.app %>/images',
+          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          dest: '<%= yeoman.dist %>/images',
         }]
       }
     },
-
     svgmin: {
       dist: {
         files: [{
@@ -325,7 +353,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-
     htmlmin: {
       dist: {
         options: {
@@ -356,7 +383,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-
     // Replace Google CDN references
     cdnify: {
       dist: {
@@ -495,12 +521,13 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy',[
-    'copy:production'
+    'build',
+    'ssh_deploy:production'
   ]);
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
+    //'test',
     'build'
   ]);
 };
