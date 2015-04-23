@@ -1,3 +1,5 @@
+<ng-include src="'views/preload_modal.html'"></ng-include>
+
 <div class="home-wrapper" ng-class="{'blur':currentProject.modalOpened}">
   <div class="header hidden">
     <div class="navigation wow slideInDown" >
@@ -192,25 +194,22 @@
         <img ng-src="{{screenie}}" ng-repeat="screenie in project.screenshots">
         </div>
       </div>
-    </div>
+    <img src="/images/mockups/80m.jpg" alt=""/>
+    <img src="/images/mockups/jobfusion.jpg" alt=""/>
+    <img src="/images/mockups/komodo.jpg" alt=""/>
+    <img src="/images/mockups/nassya.jpg" alt=""/>
+    <img src="/images/mockups/ovio.jpg" alt=""/>
+    <img src="/images/mockups/sharp.jpg" alt=""/>
+  </div>
+
+
     <!--Preload before website-->
     <div class="preload-before hidden">
       <img src="/images/avatar.jpg" alt=""/>
       <img src="/images/desk_bg.jpg" class="" alt=""/>
       <img src="/images/footer_bg.jpg" class="" alt=""/>
-
-      <!-- Preload projects thumbs -->
-      <img src="/images/mockups/80m.jpg" alt=""/>
-      <img src="/images/mockups/jobfusion.jpg" alt=""/>
-      <img src="/images/mockups/komodo.jpg" alt=""/>
-      <img src="/images/mockups/nassya.jpg" alt=""/>
-      <img src="/images/mockups/ovio.jpg" alt=""/>
-      <img src="/images/mockups/sharp.jpg" alt=""/>
-      <!--End -->
-
     </div>
 
   </div>
 </div>
 <ng-include src="'views/project_modal.html'"></ng-include>
-<ng-include src="'views/preload_modal.html'"></ng-include>

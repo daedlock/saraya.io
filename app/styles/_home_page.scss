@@ -12,7 +12,7 @@ ng-include .opened + .home-wrapper {
   }
   .headline {
     /* Hossam Saraya: */
-    font-family: MyriadPro-Semibold;
+    font-family: MyriadPro-Semibold, Helvetica Neue, Helvetica, Arial;
     font-size: 48px;
     color: #FFFFFF;
     line-height: 58px;
@@ -21,7 +21,7 @@ ng-include .opened + .home-wrapper {
 
   .sub {
     /* A UI/UX Designer, Fr: */
-    font-family: Raleway-Light;
+    font-family: Raleway-Light, Helvetica Neue, Helvetica, Arial;
     font-size: 23px;
     color: rgba(255,255,255,0.70);
     line-height: 33px;
@@ -49,7 +49,7 @@ ng-include .opened + .home-wrapper {
 
       .text {
         /* scroll down to explo: */
-        font-family: ProximaNova-Regular;
+        font-family: ProximaNova-Regular,Helvetica Neue, Helvetica, Arial;
         font-size: 12px;
         color: rgba(255,255,255,0.50);
         line-height: 17px;
@@ -69,7 +69,7 @@ ng-include .opened + .home-wrapper {
 
       .logo {
         /* saraya.me: */
-        font-family: ProximaNova-Semibold;
+        font-family: ProximaNova-Semibold,Helvetica Neue, Helvetica, Arial;
         font-size: 36px;
         color: #FFFFFF;
         letter-spacing: 1px;
@@ -99,7 +99,7 @@ ng-include .opened + .home-wrapper {
           display: inline-block;
           list-style: none;
           /* portfolio: */
-          font-family: ProximaNova-Regular;
+          font-family: ProximaNova-Regular,"Helvetic Neue", Helvetica, Arial;
           font-size: 24px;
           color: #FFFFFF;
           line-height: 29px;
@@ -159,7 +159,7 @@ ng-include .opened + .home-wrapper {
 
     .title {
       /* MOST RECENT WORK: */
-      font-family: ProximaNova-Bold;
+      font-family: ProximaNova-Bold, "Helvetic Neue", Helvetica, Arial;
       font-size: 24px;
       color: rgba(0,0,0,0.80);
       letter-spacing: 2.5px;

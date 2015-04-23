@@ -3,7 +3,7 @@
   @include transform(translateZ(0));
   .title {
     /* Sharp Insurance Syst: */
-    font-family: MyriadPro-Light;
+    font-family: MyriadPro-Light, "Helvetic Neue", Helvetica, Arial;
     font-size: 40px;
     color: #FFFFFF;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.30);
@@ -32,7 +32,7 @@
 
   .desc {
     /* fillerati text: */
-    font-family: Raleway-Light;
+    font-family: Raleway-Light,"Helvetic Neue", Helvetica, Arial;
     font-size: 18px;
     color: rgba(255,255,255,0.60);
     line-height: 46px;
@@ -54,7 +54,7 @@
     }
     .title {
       /* Technology Stack: */
-      font-family: MyriadPro-Light;
+      font-family: MyriadPro-Light,"Helvetic Neue", Helvetica, Arial;
       font-size: 30px;
       color: rgba(255,255,255,0.80);
       line-height: 37px;
@@ -72,7 +72,7 @@
     .tech-headline {
       margin-top: 43px;
       /* Backend: */
-      font-family: "MyriadPro-Light";
+      font-family: "MyriadPro-Light","Helvetic Neue", Helvetica, Arial;
       font-size: 28px;
       color: rgba(255,255,255,0.80);
       line-height: 37px;
@@ -87,7 +87,7 @@
     }
     .tech-name {
       /* Ruby on Rails: */
-      font-family: Raleway-Light;
+      font-family: Raleway-Light,"Helvetic Neue", Helvetica, Arial;
       font-size: 16px;
       color: rgba(255,255,255,0.80);
       letter-spacing: 1.79px;
@@ -180,7 +180,7 @@
     }
     .screenshots-headline {
       /* Screenshots: */
-      font-family: MyriadPro-Light;
+      font-family: MyriadPro-Light,"Helvetic Neue", Helvetica, Arial;
       font-size: 30px;
       color: rgba(255,255,255,0.80);
       letter-spacing: 1.25px;
