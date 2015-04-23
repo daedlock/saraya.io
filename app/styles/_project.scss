@@ -132,11 +132,12 @@
   }
 
   .preview-mobile {
-    margin-top: 116px;
+    margin-top: 70px;
     text-align: center;
+
+
     .iphone-frame {
       text-align: center;
-
       margin: 0 auto;
       background: url("/images/iphone_frame.png");
       background-size: contain;
@@ -145,7 +146,8 @@
       background-position: center;
 
       img {
-        width: 50%;
+        width: 40%;
+        min-width: 330px;
         z-index: -1;
         transform: scale(0.76, 0.76);
       }
@@ -158,7 +160,7 @@
     }
   }
   .screenshots {
-    margin-top: 150px;
+    margin-top: 70px;
     padding-bottom: 80px;
 
     img {
