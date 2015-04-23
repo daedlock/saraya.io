@@ -18,7 +18,9 @@ module.exports = function (grunt) {
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
-    dist: 'dist'
+    dist: 'dist',
+    deployDir: '/var/www/html'
+    //deployDir: '/Users/deadlock/Desktop/html'
   };
 
   // Define the configuration for all the tasks
@@ -410,6 +412,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      production: {
+        expand: true,
+        cwd: '<%= yeoman.dist %>',
+        dest: '<%= yeoman.deployDir %>',
+        src: '**/*'
       }
     },
 
@@ -435,6 +443,8 @@ module.exports = function (grunt) {
         singleRun: true
       }
     }
+
+
   });
 
 
@@ -482,6 +492,10 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('deploy',[
+    'copy:production'
   ]);
 
   grunt.registerTask('default', [
