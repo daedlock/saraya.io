@@ -142,7 +142,7 @@ ng-include .opened + .home-wrapper {
   }
   .body {
     overflow: visible;
-    padding:80px 0 100px 0;
+    padding:80px 0 80px 0;
     position: relative;
 
     .bg {
@@ -166,7 +166,6 @@ ng-include .opened + .home-wrapper {
       line-height: 36px;
       /* Line: */
       padding-bottom: 20px;
-      margin-bottom: 60px;
       border-bottom: 1px solid rgba(9,9,9,0.14);
 
       .fa {
