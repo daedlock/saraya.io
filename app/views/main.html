@@ -1,4 +1,4 @@
-<ng-include src="'views/preload_modal.html'"></ng-include>
+<ng-include ng-show="!loaded" src="'views/preload_modal.html'"></ng-include>
 <!--Preload before website-->
 <div class="preload-before hidden">
   <img src="/images/avatar.jpg" alt=""/>
@@ -6,7 +6,7 @@
 </div>
 
 
-<div class="home-wrapper" ng-class="{'blur':currentProject.modalOpened}">
+<div class="home-wrapper" ng-show="loaded" ng-class="{'blur':currentProject.modalOpened}">
   <div class="header">
     <div class="navigation wow slideInDown" >
       <div class="logo hidden-xs hidden-sm">

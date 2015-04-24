@@ -37,6 +37,10 @@ ng-include .opened + .home-wrapper {
     color: #FFF;
     padding-bottom: 74px;
     background: url(/images/desk_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+
+
     .container {
       position: relative;
       top:-20px;
@@ -184,7 +188,8 @@ ng-include .opened + .home-wrapper {
     padding-top: 109px;
     padding-bottom: 74px;
     background: url(/images/footer_bg.jpg);
-
+    background-size: cover;
+    background-position: center center;
     .headline {
       font-size: 48px;
     }

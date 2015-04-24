@@ -14,8 +14,8 @@
  */
 function chunk(arr, size) {
   var newArr = [];
-  for (var i=0; i<arr.length; i+=size) {
-    newArr.push(arr.slice(i, i+size));
+  for (var i = 0; i < arr.length; i += size) {
+    newArr.push(arr.slice(i, i + size));
   }
   return newArr;
 }
@@ -36,32 +36,35 @@ function initialize($scope) {
   });
 
   $(document).ready(function () {
+
     ////For Preloading
     //$(".body").addClass("offset-page-vertical");
     //
-    //var imgLoad =  imagesLoaded($(".preload-before img"));
     //
     //imgLoad.on( 'progress', function( instance, image ) {
     //  var result = image.isLoaded ? 'loaded' : 'broken';
     //  console.log( 'image is ' + result + ' for ' + image.img.src );
     //});
 
+    var imgLoad = imagesLoaded($(".preload-before img"));
 
-    //imgLoad.on('always',function () {
-    //  $(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
-    //  $(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
-    //  $(".header").removeClass("hidden");
-    //  $(".body").removeClass("offset-page-vertical");
-    //  $(".preload").animateCSS("fadeOutDownBig", function () {
-    //    $(this).remove();
-    //  });
-    //});
+    imgLoad.on('always', function () {
+      //$(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
+      //$(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
+      //$(".header").removeClass("hidden");
+      //$(".body").removeClass("offset-page-vertical");
+      //$(".preload").animateCSS("fadeOutDownBig", function () {
+      //  $(this).remove();
+      //});
+
+      $scope.$apply(function () {
+        $scope.loaded = true;
+      });
+
+      
+    });
 
   });
-
-
-
-
 
 
   //Fires on loading divs from ng-include (modals in this case)
@@ -72,13 +75,13 @@ function initialize($scope) {
 };
 
 
-function clearAnimationClasses(project){
-  var projectModal = $(project.cssSelector+".project-wrapper");
-  projectModal.find("[style]").attr("style","");
+function clearAnimationClasses(project) {
+  var projectModal = $(project.cssSelector + ".project-wrapper");
+  projectModal.find("[style]").attr("style", "");
 }
 function animateContent(project) {
   setTimeout(function () {
-    var projectModal = $(project.cssSelector+".project-wrapper");
+    var projectModal = $(project.cssSelector + ".project-wrapper");
     projectModal.find(".project-title,.project-desc").animateCSS("fadeInUp", function () {
       projectModal.find(".close-modal").animateCSS("rotateIn");
 
@@ -96,7 +99,7 @@ function animateContent(project) {
     projectModal.find(".screenshots").animateCSS("fadeInUp");
   }, 500);
 }
-function toggle($scope,project) {
+function toggle($scope, project) {
 
   if (project.modalOpened) {
     project.modalState = "closed"
@@ -116,7 +119,7 @@ function toggle($scope,project) {
     setTimeout(function () {
       $(" a.fluid-zoom").fluidbox();
 
-    },10);
+    }, 10);
     //reactive fluidbox
     animateContent(project);
 
@@ -130,6 +133,7 @@ angular.module('hsApp')
   .controller('MainCtrl', function ($scope) {
 
     $scope.currentProject = {};
+    $scope.loaded = false;
     var projects = [
       {
         title: "Jobfusion",
@@ -319,12 +323,12 @@ angular.module('hsApp')
       }
     ];
 
-    $scope.projects = chunk(projects,3);
-    $scope.projectsTwoColumn = chunk(projects,2);
-    $scope.projectsOneColumn = chunk(projects,1);
+    $scope.projects = chunk(projects, 3);
+    $scope.projectsTwoColumn = chunk(projects, 2);
+    $scope.projectsOneColumn = chunk(projects, 1);
 
     $scope.toggle = function (project) {
-      toggle($scope,project);
+      toggle($scope, project);
     }
     $scope.animateContent = function (project) {
       animateContent(project);
