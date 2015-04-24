@@ -103,11 +103,13 @@ function toggle($scope,project) {
     project.modalOpened = false;
     clearAnimationClasses(project);
     $scope.currentProject = {};
+    $("body").removeClass("overflow-hidden");
   }
   else {
     project.modalState = "opened"
     project.modalOpened = true;
     $scope.currentProject = project;
+    $("body").addClass("overflow-hidden");
 
     //Broadcast modal opened event
     $scope.$broadcast("modalOpened");
