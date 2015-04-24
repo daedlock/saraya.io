@@ -29,6 +29,8 @@ function initialize($scope) {
   //  spinner: 'spinner7',
   //  bgColor: "#222"
   //});
+
+
   new WOW().init();
 
   $(window).on('beforeunload', function () {
@@ -36,32 +38,15 @@ function initialize($scope) {
   });
 
   $(document).ready(function () {
-
-    ////For Preloading
-    //$(".body").addClass("offset-page-vertical");
-    //
-    //
-    //imgLoad.on( 'progress', function( instance, image ) {
-    //  var result = image.isLoaded ? 'loaded' : 'broken';
-    //  console.log( 'image is ' + result + ' for ' + image.img.src );
-    //});
-
+    NProgress.start();
     var imgLoad = imagesLoaded($(".preload-before img"));
 
     imgLoad.on('always', function () {
-      //$(".home-wrapper .header").backstretch("/images/desk_bg.jpg");
-      //$(".home-wrapper .footer").backstretch("/images/footer_bg.jpg");
-      //$(".header").removeClass("hidden");
-      //$(".body").removeClass("offset-page-vertical");
-      //$(".preload").animateCSS("fadeOutDownBig", function () {
-      //  $(this).remove();
-      //});
-
       $scope.$apply(function () {
         $scope.loaded = true;
-      });
+        NProgress.done();
 
-      
+      });
     });
 
   });
