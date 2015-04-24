@@ -52,6 +52,18 @@ module.exports = function (grunt) {
           number_of_releases: '3',
           before_deploy: 'rm -rf /var/www/html'
         }
+      },
+      testing: {
+        options: {
+          current_symlink: 'testing',
+          deploy_path: '/var/www',
+          host: 'saraya.me',
+          username: 'root',
+          password: 'hossam11',
+          debug: true,
+          number_of_releases: '1',
+          before_deploy: 'rm -rf /var/www/testing'
+        }
       }
     },
 
@@ -338,7 +350,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          src: '**/*/*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -523,6 +535,11 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy',[
     'build',
     'ssh_deploy:production'
+  ]);
+
+  grunt.registerTask('deployTesting',[
+    'build',
+    'ssh_deploy:testing'
   ]);
 
   grunt.registerTask('default', [
