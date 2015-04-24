@@ -343,6 +343,8 @@ ng-include .opened + .home-wrapper {
 
     /* Disable Animations in home page because its not cool on mobile */
     .wow {
+      visibility: visible !important;
+
       -o-transition-property: none !important;
       -moz-transition-property: none !important;
       -ms-transition-property: none !important;
