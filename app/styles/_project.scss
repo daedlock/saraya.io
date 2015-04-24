@@ -67,7 +67,10 @@
 
 
     .techs {
-      margin-left: 45px;
+      @media(min-width:992px){
+        margin-left: 45px;
+
+      }
     }
     .tech-headline {
       margin-top: 43px;
