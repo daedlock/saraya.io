@@ -344,7 +344,7 @@ module.exports = function (grunt) {
 
     imagemin: {
       options: {
-        use: [mozjpeg({quality: 85})]
+        use: [mozjpeg({quality: 92})]
       },
       dist: {
         files: [{
