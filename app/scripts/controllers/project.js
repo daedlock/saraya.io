@@ -1,13 +1,5 @@
-angular.module("hsApp")
-.controller("ProjectController",function($scope){
+angular.module("hsApp").controller("ProjectController", function($scope) {
+  $scope.load = function() {};
 
-
-
-    $scope.load = function(){
-
-
-    }
-
-    $scope.load();
-
-  });
+  $scope.load();
+});

@@ -1,8 +1,4 @@
-'use strict';
-
-
-
-
+"use strict";
 
 /**
  * @ngdoc overview
@@ -13,27 +9,24 @@
  * Main module of the application.
  */
 angular
-  .module('hsApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+  .module("hsApp", [
+    "ngAnimate",
+    "ngCookies",
+    "ngResource",
+    "ngRoute",
+    "ngSanitize",
+    "ngTouch"
   ])
-  .run(function () {
+  .run(function() {
     //  jQuery
-
-
   })
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when("/", {
+        templateUrl: "views/main.html",
+        controller: "MainCtrl"
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: "/"
       });
   });
-
