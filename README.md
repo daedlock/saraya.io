@@ -2,7 +2,7 @@
 My personal portfolio website. See it in action http://saraya.io
 
 # Screenshot
-![Screenshot](https://raw.githubusercontent.com/daedlock/saraya.io/master/screen.png | width=800)
+<img src="https://raw.githubusercontent.com/daedlock/saraya.io/master/screen.png" width="800"/>
 
 # License
 MIT License
